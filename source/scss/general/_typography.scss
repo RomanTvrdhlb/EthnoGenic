@@ -1,0 +1,96 @@
+.main-title {
+  color: rgba(var(--cl-a),1.0);
+  font-family: var(--font-family);
+  font-size: 65px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 100%;
+  text-align: left;
+  z-index: 2;
+
+    @include small-tablet{
+      font-size: 40px;
+    }
+}
+
+.main-phrase {
+  color: rgba(var(--cl-d), 1);
+  font-family: var(--font-family3);
+  font-size: 13px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+// .main-button {
+//   background-color: transparent;
+//   color: rgba(var(--cl-a), 1);
+//   font-family: var(--font-family);
+//   font-size: 13px;
+//   font-weight: 400;
+//   font-style: normal;
+//   letter-spacing: normal;
+//   line-height: normal;
+//   text-align: left;
+//   text-transform: uppercase;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 112px;
+//   height: 40px;
+//   border: 1px solid var(--br-a);
+//   background-color: transparent;
+//   transition: all 0.4s;
+
+//   &:hover {
+//     transform: scale(1.01);
+//     color: rgba(var(--cl-c), 1);
+//   }
+// }
+
+// p{
+// color: rgba(var(--cl-a),1.0);
+// font-family: var(--font-family);
+// font-size: 14px;
+// font-weight: 300;
+// font-style: normal;
+// letter-spacing: normal;
+// line-height: normal;
+// text-align: left;
+// direction: ltr !important;
+// z-index: 5;
+// }
+
+// .main-bold{
+//   font-family: var(--font-family);
+//   color: rgba(var(--cl-a),1.0);
+//   font-weight: 700;
+// }
+
+// .contact-button{
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 112px;
+//   height: 40px;
+//   background-color: rgba(var(--bg-g),1.0);
+//   font-family: var(--font-family);
+//   color: rgba(var(--cl-a),1.0);
+//   font-size: 13px;
+//   font-weight: 700;
+//   font-style: normal;
+//   letter-spacing: normal;
+//   line-height: normal;
+//   text-align: center;
+//   text-transform: uppercase;
+//   align-self: flex-end;
+//   transition: all .4s;
+
+//   &:hover{
+//     background-color: rgba(var(--bg-i),1.0);
+//   }
+// }

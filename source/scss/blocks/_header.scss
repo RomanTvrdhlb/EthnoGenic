@@ -1,0 +1,31 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+    
+}
+
+.header{
+  width: 100%;
+
+}
+
+.header-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  grid-gap: 40px;
+
+  @include small-tablet{
+    justify-content: space-between;
+    padding: 30px 0;
+  }
+
+  &__inner{
+    display: flex;
+    @include small-tablet{
+      display: none;
+    }
+  }
+}

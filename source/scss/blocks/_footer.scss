@@ -1,0 +1,28 @@
+footer {
+  background-color: rgba(var(--bg-h),1.0);
+  
+}
+
+.footer{
+  
+  &-inner{
+  padding: clamp(75px, 6.926vw, 80px) 0 clamp(75px, 10.996vw, 127px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  &__title{
+  color: rgba(var(--bg-i),1.0);
+  font-family: var(--font-family);
+  font-size: 41px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+
+  }
+}
+
