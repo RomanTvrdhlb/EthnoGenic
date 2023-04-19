@@ -1,0 +1,29 @@
+.info-list{
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(25px, 4.386vw, 75px);
+
+    &__text{
+        color: rgba(var(--cl-a),1.0);
+        font-family: var(--font-family);
+        font-size: 25px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 180%;
+        text-align: left;  
+        letter-spacing: -2px;
+
+        b{
+            font-weight: 500;
+            font-style: italic;
+            font-family: var(--font-family2);
+        }
+
+        @include small-tablet{
+            font-size: 15px;
+            grid-gap: clamp(20px, 2.632vw, 45px);
+            line-height: normal;
+        }
+    }
+}
