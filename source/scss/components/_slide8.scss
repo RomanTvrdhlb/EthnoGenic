@@ -1,0 +1,48 @@
+.slide8{
+    .default-slide__box{
+        grid-gap: clamp(40px, 3.509vw, 60px);
+        grid-template-columns: 1.6fr 1fr;
+
+        @include laptop{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;            
+        }
+
+        @include small-tablet{
+            justify-content: flex-start;
+            padding-top: 0;
+        }
+    }
+
+    p{
+        grid-gap: 60px;
+
+        @include laptop{
+            max-width: 980px;
+        }
+
+
+    }
+
+    .default-slide__picture{
+        display: flex;
+        justify-content: center;
+
+        img,picture{
+            height: 70vh;
+            width: auto;
+
+            @include tablet{
+                height: 60vh;
+            }
+
+            @include small-tablet{
+                margin-left: -30px;
+                margin-right: -60px;
+                
+                width: calc(100% + 90px);
+            }
+        }
+    }
+}

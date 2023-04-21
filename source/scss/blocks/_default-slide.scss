@@ -8,6 +8,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: clamp(40px, 5.556vw, 95px);
+    position: relative;
 
     @include laptop {
       grid-template-columns: 1.4fr 1fr;
@@ -19,23 +20,14 @@
       flex-direction: column;
       justify-content: flex-start;
     }
+  }
 
-    @include small-tablet{
-        &.listening{
-            padding-top: 90px;
-          }
-    }
-
-    &--mode {
-      @include laptop {
-        padding-top: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-      }
-    }
-
-    
+  &__inner{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(50px, 6.433vw, 110px) 30px;
   }
 
   &__picture {
@@ -45,100 +37,6 @@
     img {
       width: 100%;
       height: auto;
-    }
-
-    &--mode {
-      display: flex;
-      align-items: center;
-      justify-content: end;
-
-      @include notebook {
-        picture,
-        img {
-          width: auto;
-          height: 90vh;
-        }
-      }
-      @include tablet {
-        max-width: 50vh;
-      }
-    }
-
-    &--sixth {
-      display: flex;
-      align-items: center;
-      justify-content: end;
-
-      @include notebook {
-        picture,
-        img {
-          width: auto;
-          height: 90vh;
-        }
-      }
-      @include laptop {
-        justify-content: center;
-        picture,
-        img {
-          width: auto;
-          height: 55vh;
-        }
-      }
-      @include tablet{
-        justify-content: flex-start;
-        margin-left: -60px;
-      }
-      @include mobile{
-        picture,img{
-            width: 100%;
-            height: auto;
-        }
-      }
-    }
-
-    &--designations{
-        display: flex;
-        align-items: center;
-        justify-content: end;
-  
-        @include notebook {
-          picture,
-          img {
-            width: auto;
-            height: 60vh;
-          }
-        }
-        @include tablet {
-            justify-content: center;
-            picture,
-            img {
-              height: 50vh;
-            }
-        } 
-        @include small-tablet {
-            picture,
-            img {
-              height: 60vh;
-            }
-        } 
-    }
-
-    &--listening{
-        display: flex;
-        align-items: center;
-        justify-content: end;
-  
-        @include notebook {
-          picture,
-          img {
-            width: 100%;
-            height: auto;
-          }
-        }
-        @include tablet {
-            justify-content: center;
-            
-        } 
     }
   }
 
@@ -153,27 +51,6 @@
       font-family: var(--font-family2);
       font-style: italic;
       font-weight: 500;
-    }
-
-    &--mode {
-      grid-gap: clamp(40px, 3.509vw, 60px);
-
-      @include laptop {
-        max-width: 100%;
-        margin-top: -40px;
-      }
-
-      @include tablet {
-        margin-top: initial;
-      }
-    }
-
-    &.listening{
-
-        @include mobile{
-            flex-grow: 1;
-            justify-content: center;
-        }
     }
   }
 }

@@ -1,0 +1,41 @@
+.slide22 {
+  .default-slide__box {
+    @include small-tablet {
+      padding-top: 90px;
+    }
+  }
+
+  .default-slide__picture {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    @include notebook {
+      picture,
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    @include tablet {
+      justify-content: center;
+    }
+  }
+
+  .default-slide__info {
+    grid-gap: clamp(40px, 3.509vw, 60px);
+
+    @include laptop {
+      max-width: 100%;
+      margin-top: -40px;
+    }
+
+    @include tablet {
+      margin-top: initial;
+    }
+
+    @include mobile {
+      padding-top: 50px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.slide6 {
+  .default-slide__box {
+    @include laptop {
+      padding-top: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+
+  .default-slide__picture {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    @include notebook {
+      picture,
+      img {
+        width: auto;
+        height: 90vh;
+      }
+    }
+    @include laptop {
+      justify-content: center;
+      picture,
+      img {
+        width: auto;
+        height: 55vh;
+      }
+    }
+    @include tablet {
+      justify-content: flex-start;
+      margin-left: -60px;
+    }
+    @include mobile {
+      picture,
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .default-slide__info {
+    grid-gap: clamp(40px, 3.509vw, 60px);
+
+    @include laptop {
+      max-width: 100%;
+      margin-top: -40px;
+    }
+
+    @include tablet {
+      margin-top: initial;
+    }
+  }
+}

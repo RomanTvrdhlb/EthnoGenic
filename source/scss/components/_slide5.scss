@@ -1,0 +1,20 @@
+.slide5{
+
+    .default-slide__picture{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+  
+        @include notebook {
+          picture,
+          img {
+            width: auto;
+            height: 90vh;
+          }
+        }
+        @include tablet {
+          max-width: 50vh;
+        }
+    }
+    
+}

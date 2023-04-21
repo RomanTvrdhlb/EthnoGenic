@@ -41,7 +41,7 @@ p{
   justify-content: flex-start;
   grid-gap: 115px;
   letter-spacing: -2px;
-
+  
   @include small-tablet{
     font-size: 15px;
     grid-gap: clamp(20px, 2.632vw, 45px);

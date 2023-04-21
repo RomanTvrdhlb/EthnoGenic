@@ -1,0 +1,102 @@
+.slide4 {
+  .default-slide__box {
+    grid-template-columns: 60%;
+    justify-content: end;
+
+    @include laptop {
+      grid-template-columns: 100%;
+      align-items: end;
+    }
+
+    @include small-tablet {
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+    }
+  }
+
+  p {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    max-width: 850px;
+    grid-gap: 60px;
+
+    @media (min-width: (1900px)) {
+      top: 13%;
+    }
+
+    @include notebook {
+      max-width: 700px;
+    }
+
+    @include laptop {
+      max-width: 920px;
+    }
+
+    @include small-tablet {
+      position: initial;
+      grid-gap: 40px;
+      max-width: 100%;
+    }
+
+    @include mobile {
+      grid-gap: 30px;
+    }
+
+    span:last-child {
+      @include laptop {
+        padding-top: 40px;
+        max-width: 380px;
+      }
+      @include tablet {
+        padding: 0;
+        max-width: 320px;
+      }
+      @include small-tablet {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .default-slide__picture {
+    @include notebook {
+      display: flex;
+      justify-content: end;
+
+      picture,
+      img {
+        width: 85%;
+        display: flex;
+        justify-content: end;
+      }
+    }
+
+    @include laptop {
+      height: 70%;
+      padding: 0 40px 40px 40px;
+
+      img,
+      picture {
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    @include tablet {
+        display: flex;
+        justify-content: center;
+        height: 60%;
+    }
+
+    @include small-tablet {
+      padding: 0;
+      height: fit-content;
+
+      img,
+      picture {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
