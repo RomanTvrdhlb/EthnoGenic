@@ -1,0 +1,100 @@
+.slide18{
+    .default-slide__box{
+        display: flex;
+        flex-direction: column;
+
+        @include laptop{
+            justify-content: center;
+        }
+
+        @include small-tablet{
+            padding: 0;
+        }
+    }
+
+    .default-slide__inner{
+        width: 100%;
+        height: fit-content;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        @include laptop{
+            padding: 0;
+        }
+
+        @include tablet{
+            flex-direction: column;
+            height: 100%;
+        }
+
+        @include small-tablet{
+            justify-content: center;
+        }
+
+        @include mobile{
+            justify-content: flex-start;
+            padding-top: 20px;
+        }
+
+        .default-slide__info{
+            @include for-tablet{
+                display: none;
+            }
+            @include tablet{
+                display: flex;
+            }
+        }
+        
+    }
+
+    p{
+        @include laptop{
+            max-width: 450px;
+        }
+
+        @include tablet{
+            display: none;
+        }
+    }
+    .default-slide__picture{
+
+        img,picture{
+            width: auto;
+            height: 65vh;
+
+            @include notebook{
+                height: 60vh;
+            }
+
+            @include tablet{
+                height: 45vh;
+            }
+
+            @include mobile{
+                height: 50vh;
+                margin-left: -20px;
+                margin-right: -60px;
+                width: calc(95% + 90px);
+            }
+
+            @include ios{
+                height: 40vh;
+            }
+        }
+
+        @include tablet{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .default-slide__info{
+        max-width: 850px;
+        justify-content: center;
+
+        @include laptop{
+            max-width: 100%;
+        }
+    }
+}

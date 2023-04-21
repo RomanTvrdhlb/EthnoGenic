@@ -1,0 +1,120 @@
+.slide3 {
+  .default-slide__box {
+    grid-template-columns: 1fr 1.6fr;
+
+    @include laptop {
+      grid-template-columns: 100%;
+      justify-items: center;
+    }
+
+    @include mobile {
+      padding-top: 0;
+    }
+  }
+
+  .default-slide__inner {
+    justify-content: center;
+
+    @include laptop {
+      position: absolute;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 10vh 60px;
+      inset: 0;
+    }
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: static;
+      height: fit-content;
+      order: 2;
+      padding: 0;
+      width: 100%;
+    }
+
+    @include mobile {
+      grid-gap: 30px;
+    }
+  }
+
+  p {
+    text-align: center;
+    padding-bottom: 15vh;
+
+    @include laptop {
+      max-width: 470px;
+    }
+
+    @include tablet {
+      padding: 0;
+      text-align: left !important;
+    }
+  }
+
+  .default-slide__info {
+    max-width: initial;
+    width: 800px;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-29%);
+
+    @include notebook {
+      width: 100%;
+      max-width: 650px;
+    }
+
+    @include laptop {
+      position: static;
+      text-align: center;
+      max-width: 430px;
+      padding: 0;
+      transform: none;
+      align-self: flex-start;
+    }
+
+    @include tablet {
+      align-self: center;
+      max-width: 530px;
+    }
+
+    @include small-tablet {
+      max-width: 280px;
+    }
+  }
+
+  .default-slide__picture {
+    @include laptop {
+      display: flex;
+      justify-content: center;
+    }
+
+    picture,
+    img {
+      width: auto;
+      height: 80vh;
+
+      @include laptop {
+        height: 65vh;
+      }
+
+      @include tablet {
+        height: 50vh;
+      }
+
+      @include small-tablet {
+        height: 65vh;
+      }
+
+      @include mobile {
+        height: 65vh;
+        margin-left: -20px;
+        margin-right: -60px;
+        width: calc(95% + 90px);
+      }
+    }
+  }
+}
