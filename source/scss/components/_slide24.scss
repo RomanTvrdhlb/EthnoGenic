@@ -1,0 +1,73 @@
+.slide24{
+
+    .default-slide__box{
+        grid-template-columns: 1fr 1.5fr;
+        grid-gap: clamp(50px, 8.07vw, 138px);
+
+        @include notebook{
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include laptop{
+            grid-gap: 35px;
+            grid-template-columns: 1fr 1.5fr;
+        }
+
+        @include tablet{
+            flex-direction: column-reverse;
+            justify-content: flex-end;
+           
+        }
+
+        @include small-tablet{
+            grid-gap: 80px;
+        }
+    }
+
+    .contact-form{
+        justify-self: end;
+
+        @include small-tablet{
+            order: 1;
+        }
+    }
+
+    p{
+        @include for-small-tablet{
+            display: none;
+        }
+
+    }
+
+    .default-slide__picture{
+
+        img,picture{
+                width: auto;
+                height: 90vh;
+
+
+            @include laptop{
+                height: 60vh;
+            }
+
+            @include tablet{
+                width: auto;
+                height: 45vh;
+            }
+        }
+
+        @include tablet{
+            display: flex;
+            justify-content: center;
+        }
+
+         @include small-tablet{
+        display: none;
+    }
+    }
+
+    
+
+   
+
+}

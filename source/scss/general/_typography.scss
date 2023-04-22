@@ -14,18 +14,6 @@
     }
 }
 
-// .main-phrase {
-//   color: rgba(var(--cl-d), 1);
-//   font-family: var(--font-family);
-//   font-size: 13px;
-//   font-weight: 300;
-//   font-style: normal;
-//   letter-spacing: normal;
-//   line-height: normal;
-//   text-align: left;
-//   text-transform: uppercase;
-// }
-
 p{
   color: rgba(var(--cl-a),1.0);
   font-family: var(--font-family);
@@ -45,63 +33,28 @@ p{
   @include small-tablet{
     font-size: 15px;
     grid-gap: clamp(20px, 2.632vw, 45px);
+    letter-spacing: normal;
   }
 }
 
-// .main-button {
-//   background-color: transparent;
-//   color: rgba(var(--cl-a), 1);
-//   font-family: var(--font-family);
-//   font-size: 13px;
-//   font-weight: 400;
-//   font-style: normal;
-//   letter-spacing: normal;
-//   line-height: normal;
-//   text-align: left;
-//   text-transform: uppercase;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   width: 112px;
-//   height: 40px;
-//   border: 1px solid var(--br-a);
-//   background-color: transparent;
-//   transition: all 0.4s;
+.contact-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 53px;
+  background-color: rgba(var(--bg-e),1.0);
+  font-family: var(--font-family);
+  color: rgba(var(--cl-c),1.0);
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  transition: all .4s;
 
-//   &:hover {
-//     transform: scale(1.01);
-//     color: rgba(var(--cl-c), 1);
-//   }
-// }
-
-
-
-// .main-bold{
-//   font-family: var(--font-family);
-//   color: rgba(var(--cl-a),1.0);
-//   font-weight: 700;
-// }
-
-// .contact-button{
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   width: 112px;
-//   height: 40px;
-//   background-color: rgba(var(--bg-g),1.0);
-//   font-family: var(--font-family);
-//   color: rgba(var(--cl-a),1.0);
-//   font-size: 13px;
-//   font-weight: 700;
-//   font-style: normal;
-//   letter-spacing: normal;
-//   line-height: normal;
-//   text-align: center;
-//   text-transform: uppercase;
-//   align-self: flex-end;
-//   transition: all .4s;
-
-//   &:hover{
-//     background-color: rgba(var(--bg-i),1.0);
-//   }
-// }
+  &:hover{
+    background-color: rgba(var(--bg-f),1.0);
+  }
+}

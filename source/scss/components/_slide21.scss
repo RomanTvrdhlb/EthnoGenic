@@ -1,28 +1,28 @@
-.slide21{
-    .default-slide__picture{
-            display: flex;
-            align-items: center;
-            justify-content: end;
-      
-            @include notebook {
-              picture,
-              img {
-                width: auto;
-                height: 60vh;
-              }
-            }
-            @include tablet {
-                justify-content: center;
-                picture,
-                img {
-                  height: 50vh;
-                }
-            } 
-            @include small-tablet {
-                picture,
-                img {
-                  height: 60vh;
-                }
-            } 
+.slide21 {
+  .default-slide__picture {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    img,
+    picture {
+      @include notebook {
+        width: auto;
+        height: 60vh;
+      }
+
+      @include tablet {
+        height: 45vh;
+        width: auto;
+      }
+
+      @include small-tablet {
+        height: 60vh;
+      }
     }
+
+    @include tablet {
+      justify-content: center;
+    }
+  }
 }

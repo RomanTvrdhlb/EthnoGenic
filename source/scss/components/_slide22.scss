@@ -10,13 +10,27 @@
     align-items: center;
     justify-content: end;
 
-    @include notebook {
-      picture,
-      img {
+    img,
+    picture {
+      @include notebook {
         width: 100%;
         height: auto;
       }
+
+      @include tablet{
+        width: auto;
+        height: 60vh;
+      }
+
+      @include small-tablet{
+        height: 55vh;
+      }
+
+      @include mobile{
+        height: 45vh;
+      }
     }
+
     @include tablet {
       justify-content: center;
     }

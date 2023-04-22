@@ -1,0 +1,180 @@
+.slide23 {
+  .default-slide__box {
+    display: flex;
+    flex-direction: column;
+    padding-top: clamp(20px, 2.339vw, 40px);
+
+    @include notebook {
+      grid-gap: 20px;
+    }
+
+    @include laptop {
+      grid-gap: 40px;
+    }
+
+    @include ios{
+        grid-gap: 20px;
+    }
+  }
+
+  .default-slide__inner {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+
+    @include notebook {
+      align-items: flex-start;
+    }
+
+    @include tablet {
+      flex-direction: column;
+      grid-gap: clamp(20px, 2.339vw, 40px);
+    }
+
+    &--mode {
+      grid-gap: clamp(30px, 5.848vw, 100px);
+      justify-content: end;
+      margin-top: -110px;
+
+      @include notebook {
+        align-items: center;
+      }
+
+      @include laptop {
+        margin: 0;
+        justify-content: space-between;
+        padding-left: 50px;
+      }
+
+      @include tablet {
+        padding: 0;
+        flex-direction: row;
+      }
+
+      .default-slide__picture {
+        width: fit-content;
+        img,
+        picture {
+          width: auto;
+          height: 40vh;
+
+          @include notebook {
+            height: 45vh;
+          }
+
+          @include laptop {
+            height: 30vh;
+          }
+
+          @include tablet {
+            height: 25vh;
+          }
+        }
+
+        @include laptop {
+          margin-top: -20vh;
+        }
+
+        @include tablet {
+          margin: 0;
+        }
+      }
+
+      .default-slide__info {
+        max-width: 861px;
+        grid-gap: 40px;
+
+        @include notebook {
+          max-width: 45%;
+        }
+
+        @include laptop {
+          max-width: 64%;
+        }
+        span {
+          @include notebook {
+            display: none;
+          }
+          @include laptop {
+            display: flex;
+          }
+        }
+      }
+
+      .default-slide__about {
+        max-width: 50%;
+      }
+    }
+  }
+
+  .default-slide__info {
+    max-width: 100%;
+    @include tablet {
+      display: none;
+    }
+  }
+
+  .default-slide__picture {
+    position: relative;
+
+    img,
+    picture {
+      width: auto;
+      height: 35vh;
+
+      @include laptop {
+        height: 25vh;
+      }
+
+      @include tablet{
+        height: 20vh;
+      }
+
+      @include small-tablet{
+        height: 30vh;
+      }
+
+      @include mobile{
+        height: 22vh;
+      }
+
+      @include ios{
+        height: 17vh;
+      }
+    }
+  }
+
+  .default-slide__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    img,
+    picture {
+      height: 55vh;
+      width: auto;
+
+      @include laptop {
+        height: 35vh;
+      }
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  .default-slide__about {
+    @include for-tablet {
+      display: none;
+    }
+
+    br {
+      display: none;
+
+      @include small-tablet {
+        display: inline;
+      }
+    }
+  }
+}
