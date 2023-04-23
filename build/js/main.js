@@ -36,7 +36,7 @@ __webpack_require__.r(__webpack_exports__);
   htmlEl: document.documentElement,
   bodyEl: document.body,
   overlay: document.querySelector('[data-overlay]'),
-  burger: document.querySelector('.burger'),
+  burger: document.querySelector('.main-burger'),
   mobileBurger: document.querySelector('.mobile-menu .burger'),
   header: document.querySelector(".header"),
   firstForm: ".contact-form",
@@ -95,21 +95,19 @@ const {
   bodyEl
 } = _vars__WEBPACK_IMPORTED_MODULE_2__["default"];
 const mobileMenuHandler = function (overlay, mobileMenu, burger) {
-  console.log(burger);
   burger.addEventListener('click', function () {
     (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.toggleCustomClass)(burger, 'active');
+    (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.toggleCustomClass)(mobileBurger, 'active');
     (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.toggleCustomClass)(mobileMenu, 'active');
     (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.toggleCustomClass)(overlay, 'active');
-    console.log('123');
-
-    // if(!bodyEl.classList.contains('dis-scroll')) {
-    //   disableScroll()
-    // } else {
-    //   enableScroll()
-    // }
+  });
+  mobileBurger.addEventListener('click', function () {
+    (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.toggleCustomClass)(burger, 'active');
+    (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.toggleCustomClass)(mobileBurger, 'active');
+    (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.toggleCustomClass)(mobileMenu, 'active');
+    (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.toggleCustomClass)(overlay, 'active');
   });
 };
-
 const hideMenuHandler = function (overlay, mobileMenu, burger) {
   (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.removeCustomClass)(mobileMenu, 'active');
   (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.removeCustomClass)(burger, 'active');

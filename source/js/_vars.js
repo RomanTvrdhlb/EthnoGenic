@@ -6,7 +6,7 @@ export default {
   htmlEl: document.documentElement,
   bodyEl: document.body,
   overlay: document.querySelector('[data-overlay]'),
-  burger: document.querySelector('.burger'),
+  burger: document.querySelector('.main-burger'),
   mobileBurger: document.querySelector('.mobile-menu .burger'),
   header: document.querySelector(".header"),
   firstForm: (".contact-form"),

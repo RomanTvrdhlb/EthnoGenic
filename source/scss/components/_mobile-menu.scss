@@ -5,7 +5,7 @@
   justify-content: center;
   position: relative;
   transition: all 0.4s;
-  z-index: 100;
+  z-index: 50;
   display: flex;
   position: absolute;
   top: 133px;
@@ -22,10 +22,12 @@
     img {
       display: none;
     }
+    position: static;
+    transform: translateX(0);
     span {
       width: 100%;
       height: 2px;
-      background-color: rgba(var(--bg-a), 1);
+      background-color: rgba(var(--bg-a),0.65);
       position: absolute;
       left: 0;
       top: 50%;
@@ -47,14 +49,15 @@
   display: none;
   overflow-y: auto;
   flex-direction: column;
-  grid-gap: 58px;
+  grid-gap: 70px;
   height: 100vh;
-  padding: 30px;
-  background: var(--body-bg);
+  padding: clamp(40px, 7.31vw, 125px) 30px 30px clamp(40px, 7.31vw, 125px);
+  background: rgba(var(--bg-b),0.7);
   position: fixed;
   left: 0;
   top: 0;
-  max-width: 305px;
+  max-width: 30%;
+  min-width: 180px;
   width: 100%;
   z-index: 50;
 
@@ -67,7 +70,7 @@
     &__list {
       flex-direction: column;
       align-items: flex-start;
-      grid-gap: 20px;
+      grid-gap: 30px;
     }
       &__link {
         padding: 10px 0;
