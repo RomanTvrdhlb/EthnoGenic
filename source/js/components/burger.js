@@ -6,11 +6,13 @@ import {addCustomClass, toggleCustomClass, removeCustomClass, removeClassInArray
 const {overlay, burger, mobileMenu, mainLinks, mobileBurger, bodyEl} = vars;
 
 const mobileMenuHandler = function(overlay, mobileMenu, burger) {
-  
+  console.log(burger);
   burger.addEventListener('click', function(){
     toggleCustomClass(burger,'active');
     toggleCustomClass(mobileMenu,'active');
     toggleCustomClass(overlay,'active');
+ 
+    console.log('123');
    
     // if(!bodyEl.classList.contains('dis-scroll')) {
     //   disableScroll()

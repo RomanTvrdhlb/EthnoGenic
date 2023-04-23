@@ -1,0 +1,48 @@
+.slide20 {
+
+    .default-slide__box{
+        grid-template-columns: 1fr 1.4fr;
+
+        @include laptop{
+           grid-template-columns: 1fr 1.3fr;
+            align-items: center;
+        }
+    }
+
+    .default-slide__info{
+        max-width: 600px;
+    }
+
+    .default-slide__picture {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+
+      @include laptop{
+        justify-content: center;
+        margin-bottom: -6vh;
+      }
+  
+      img,
+      picture {
+        @include notebook {
+          width: auto;
+          height: 80vh;
+        }
+  
+        @include laptop {
+          height: 61vh;
+          width: auto;
+        }
+  
+        @include small-tablet {
+          height: 60vh;
+        }
+      }
+  
+      @include tablet {
+        justify-content: center;
+      }
+    }
+  }
+  

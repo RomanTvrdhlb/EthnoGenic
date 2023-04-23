@@ -2,11 +2,11 @@
   .default-slide__box {
     grid-template-columns: 100%;
 
-    @include laptop{
-        display: flex;
-        flex-direction: column;
-        grid-gap: 20px;
-        justify-content: center;
+    @include laptop {
+      display: flex;
+      flex-direction: column;
+      grid-gap: 20px;
+      justify-content: center;
     }
   }
 
@@ -22,17 +22,17 @@
       margin-left: initial;
       justify-content: space-between;
 
-      p {  
+      p {
         max-width: 100%;
         width: 100%;
         padding-left: 2%;
 
-        @include laptop{
-            max-width: 51%;
-            padding: 0;
+        @include laptop {
+          max-width: 51%;
+          padding: 0;
         }
-        span{
-            max-width: 600px;
+        span {
+          max-width: 600px;
         }
       }
 
@@ -42,16 +42,17 @@
         margin-right: -3%;
         display: flex;
         justify-content: end;
-        img,picture{
-            height: 60vh;
+        img,
+        picture {
+          height: 60vh;
 
-            @include laptop{
-                height: 40vh;
-              }
-        }    
-        
-        @include laptop{
-            width: fit-content;
+          @include laptop {
+            height: 40vh;
+          }
+        }
+
+        @include laptop {
+          width: fit-content;
         }
       }
     }
@@ -60,8 +61,8 @@
   p {
     max-width: 730px;
 
-    @include laptop{
-        max-width: 55%;
+    @include laptop {
+      max-width: 55%;
     }
   }
 
@@ -73,13 +74,13 @@
       width: auto;
       height: 45vh;
 
-      @include laptop{
+      @include laptop {
         height: 30vh;
       }
     }
 
-    @include laptop{
-        margin: 0 !important;
+    @include laptop {
+      margin: 0 !important;
     }
   }
 }

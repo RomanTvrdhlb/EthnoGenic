@@ -1,14 +1,21 @@
 .burger {
   width: 37px;
   height: 37px;
-  display: none;
   align-items: center;
   justify-content: center;
   position: relative;
   transition: all 0.4s;
-  z-index: 60;
-  @include small-tablet {
-    display: flex;
+  z-index: 100;
+  display: flex;
+  position: absolute;
+  top: 133px;
+  left: 0;
+  transform: translateX(50%);
+
+  @include small-tablet{
+    top: 40px;
+    left: 40px;
+    transform: none;
   }
 
   &.active {

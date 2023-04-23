@@ -1,0 +1,49 @@
+.slide19 {
+
+    .default-slide__box{
+        grid-template-columns: 1fr 1.6fr;
+
+        @include laptop{
+            display: flex; 
+            flex-direction: column-reverse;
+            justify-content: center;
+            
+        }
+    }
+
+    .default-slide__info{
+        max-width: 960px;
+    }
+
+    .default-slide__picture {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+
+      @include laptop{
+        justify-content: center;
+      }
+  
+      img,
+      picture {
+        @include notebook {
+          width: auto;
+          height: 80vh;
+        }
+  
+        @include laptop {
+          height: 61vh;
+          width: auto;
+        }
+  
+        @include small-tablet {
+          height: 60vh;
+        }
+      }
+  
+      @include tablet {
+        justify-content: center;
+      }
+    }
+  }
+  

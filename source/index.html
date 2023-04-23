@@ -11,18 +11,19 @@
       <div class='main-swiper swiper-container'>
         <ul class='main-swiper__wrapper swiper-wrapper'>
           <li class='main-swiper__slide swiper-slide'>
+            <div class="first-slide__picture">
+              <picture>
+                <source type='image/webp' media='(max-width: 768x)' srcset='img/index/slideMob1.webp'>
+                <source media='(max-width: 768px)' srcset='img/index/slideMob1.png'>
+                <source type='image/webp' srcset='img/index/slide1.webp'>
+                <img width='1920' height='1352' src='img/index/slide1.png' alt='image'>
+              </picture>
+            </div>
             <div class="container">
               <div class="first-slide">
                 <div class="first-slide__box">
-                  <div class="first-slide__picture">
-                    <picture>
-                      <source type='image/webp' media='(max-width: 575x)' srcset='img/index/slideMob1.webp'>
-                      <source media='(max-width: 575px)' srcset='img/index/slideMob1.png'>
-                      <source type='image/webp' srcset='img/index/slide1.webp'>
-                      <img width='1920' height='1352' src='img/index/slide1.png' alt='image'>
-                    </picture>
-                  </div>
-                  <h1 class="main-title">enthogenica</h1>
+                  <div class="first-slide__inner">
+                    <h1 class="main-title">enthogenica</h1>
                   <div class="main-top">
                     <h2 class="main-top__title">Be Human in Kind</h2>
                     <div class="main-top__inner">
@@ -32,6 +33,10 @@
                       <span class="main-top__phrase">aware</span>
                     </div>
                   </div>
+                  </div>
+                  <button class="burger">
+                    <img width='39' height='29' src="../img/index/burger.png" alt="logo">
+                  </button>
                 </div>
               </div>
             </div>
@@ -556,7 +561,7 @@
           </li>
           <li class='main-swiper__slide swiper-slide'>
             <!-- 19 слайд+ -->
-            <!-- <div class="container">
+            <div class="container">
               <div class="default-slide slide19">
                 <article class="default-slide__box">
                   <p class="default-slide__info">
@@ -566,33 +571,36 @@
                   </p>
                   <div class="default-slide__picture">
                     <picture>
-                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                      <source media='(max-width: 575px)' srcset='img/.png'>
-                      <source type='image/webp' srcset='img/webp'>
-                      <img width='100' height='100' src='img/' alt='image'>
+                      <source type='image/webp' srcset='img/index/slide19.webp'>
+                      <img width='1118' height='966' src='img/index/slide19.png' alt='image'>
                     </picture>
                   </div>
-                  <ul class="info-list">
-                    <li class="info-list__item">
-                      <span class="info-list__text">To be <b>conscious</b> denotes none other than relating to what
-                        matters: <b>integrity...</b></span>
-                    </li>
-                    <li class="info-list__item">
-                      <span class="info-list__text">To be <b>empathic</b> denotes none other than embracing what
-                        matters: <b>vulnerability...</b></span>
-                    </li>
-                    <li class="info-list__item">
-                      <span class="info-list__text">To be <b>reflective</b> denotes none other than beholding what
-                        matters: <b>intimacy...</b></span>
-                    </li>
-                    <li class="info-list__item">
-                      <span class="info-list__text">To be <b>aware</b> denotes none other than surrendering to what
-                        matters: <b>clarity...</b></span>
-                    </li>
-                  </ul>
                 </article>
               </div>
-            </div> -->
+            </div>
+          </li>
+          <li class='main-swiper__slide swiper-slide'>
+            <!-- 20 слайд+ -->
+            <div class="container">
+              <div class="default-slide slide20">
+                <article class="default-slide__box">
+                  <p class="default-slide__info">
+                    When kindness is lost, being human is freeze framed in imagination and vacuum sealed in the
+                    postdated mausoleum of confabulated memory...
+                    <br><br>
+                    Hence the hopeless, hounded and humbled are trampled over in pursuit of reaching some higher ground
+                    or realizing some deeper cause than what anyone already is by being human in kind: conscious,
+                    empathic, reflective, aware...
+                  </p>
+                  <div class="default-slide__picture">
+                    <picture>
+                      <source type='image/webp' srcset='img/index/slide20.webp'>
+                      <img width='865' height='1004' src='img/index/slide20.png' alt='image'>
+                    </picture>
+                  </div>
+                </article>
+              </div>
+            </div>
           </li>
           <li class='main-swiper__slide swiper-slide'>
             <!-- 21 слайд+ -->
@@ -774,7 +782,7 @@
   </main>
 
   <!-- @include('partials/footer.html') -->
-  <!-- @include('partials/modals.html') -->
+  @include('partials/modals.html')
 </body>
 
 <script src="js/main.js"></script>
