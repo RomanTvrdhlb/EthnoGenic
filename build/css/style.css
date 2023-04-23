@@ -1266,6 +1266,11 @@ body.fixed-body {
   width: 100%;
   overflow: hidden;
 }
+@media (max-width: 576px) {
+  body {
+    max-height: -webkit-fill-available;
+  }
+}
 
 main {
   -webkit-transition: padding-top 0.5s linear;

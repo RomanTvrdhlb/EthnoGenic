@@ -26,6 +26,10 @@ body {
     overflow: hidden;
     // disable scroll
   }
+
+  @include mobile{
+    max-height: -webkit-fill-available;
+  }
 }
 
 main {
