@@ -1698,13 +1698,13 @@ p {
 }
 
 .mobile-menu {
-  -webkit-transition: -webkit-transform 0.4s ease;
-  transition: -webkit-transform 0.4s ease;
-  transition: transform 0.4s ease;
-  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   -webkit-transform: translateX(-120%);
           transform: translateX(-120%);
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   overflow-y: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1725,9 +1725,6 @@ p {
 .mobile-menu.active {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 .mobile-menu .main-nav__list {
   -webkit-box-orient: vertical;

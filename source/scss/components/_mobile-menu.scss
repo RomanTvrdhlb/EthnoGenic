@@ -44,9 +44,9 @@
 }
 
 .mobile-menu {
-  transition: transform 0.4s ease;
+transition: all .5s ease;
   transform: translateX(-120%);
-  display: none;
+  display: flex;
   overflow-y: auto;
   flex-direction: column;
   grid-gap: 70px;
@@ -63,7 +63,6 @@
 
   &.active {
     transform: translateX(0);
-    display: flex;
   }
 
   .main-nav {
@@ -75,6 +74,5 @@
       &__link {
         padding: 10px 0;
       }
-    
   }
 }

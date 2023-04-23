@@ -11,7 +11,7 @@ export default {
   header: document.querySelector(".header"),
   firstForm: (".contact-form"),
   mainLinks: [...document.querySelectorAll('.main-nav__link')],
-  observSections: [...document.querySelectorAll('.section-observe')],
+  observSections: [...document.querySelectorAll('.slide-observe')],
   mobileMenu: document.querySelector('.mobile-menu'),
 }
 
