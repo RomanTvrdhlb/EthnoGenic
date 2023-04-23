@@ -1,0 +1,63 @@
+.slide16{
+
+    .default-slide__box{
+        grid-template-columns: 100%;
+        padding-top: 80px;
+        grid-gap: 20px;
+        align-items: start;
+
+        @include laptop{
+            align-items: center;
+        }
+    }
+
+    .default-slide__inner{
+        display: grid;
+        grid-template-columns: 1fr 1.7fr;
+        align-items: center;
+        height: fit-content;
+
+        &--mode{
+            grid-template-columns: 2.3fr 1fr;
+
+            .default-slide__info{
+                max-width: 440px;
+                justify-self: center;
+            }
+
+            .default-slide__picture{
+                margin-top: -10vh;
+                img,picture{
+                    height: 50vh;
+
+                    @include laptop{
+                        height: 35vh;
+                    }
+                }
+                
+            }
+
+            @include laptop{
+                margin-top: -15vh;
+            }
+        }
+    }
+
+    .default-slide__info{
+        max-width: 830px;
+    }
+
+    .default-slide__picture{
+
+        img,picture{
+            width: auto;
+            height: 45vh;
+
+            @include laptop{
+                height: 40vh;
+            }
+        }
+    }
+
+
+}
