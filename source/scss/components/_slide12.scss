@@ -63,6 +63,11 @@
             height: fit-content;
         }
       }
+      
+      
+      @include mobile{
+        height: 100% !important;
+      }
     }
 
     @include small-tablet{
@@ -71,6 +76,10 @@
         flex-direction: column;
         align-items: flex-start;
         grid-gap: 20px;
+    }
+
+    @include mobile{
+      height: fit-content;
     }
   }
 
@@ -89,7 +98,18 @@
 
     @include small-tablet{
         padding: 0;
-        align-items: flex-start;
+        align-items: center;
+    }
+
+    @include mobile{
+      height: fit-content;
+    }
+  }
+
+  .default-slide__about{
+
+    @include for-small-tablet{
+      display: none;
     }
   }
 
@@ -112,8 +132,13 @@
       }
 
       @include mobile{
-        height: 35vh !important;
+        height: 30vh !important;
       }
+    }
+
+    @include small-tablet{
+      display: flex;
+      justify-content: center;
     }
   }
 }

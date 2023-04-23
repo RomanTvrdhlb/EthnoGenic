@@ -9,6 +9,10 @@
         @include laptop{
             align-items: center;
         }
+
+        @include mobile{
+            padding-top: 40px;
+        }
     }
 
     .default-slide__inner{
@@ -16,6 +20,12 @@
         grid-template-columns: 1fr 1.7fr;
         align-items: center;
         height: fit-content;
+
+        @include tablet{
+            display: flex;
+            flex-direction: column;
+            grid-gap: 70px;
+        }
 
         &--mode{
             grid-template-columns: 2.3fr 1fr;
@@ -40,11 +50,25 @@
             @include laptop{
                 margin-top: -15vh;
             }
+
+            @include tablet{
+                display: none;
+            }
+        }
+    }
+
+    .default-slide__about{
+        @include for-tablet{
+            display: none;
         }
     }
 
     .default-slide__info{
         max-width: 830px;
+
+        @include tablet{
+            display: none;
+        }
     }
 
     .default-slide__picture{
@@ -56,6 +80,19 @@
             @include laptop{
                 height: 40vh;
             }
+
+            @include small-tablet{
+                height: 55vh;
+            }
+
+            @include mobile{
+                height: 40vh;
+            }
+        }
+
+        @include tablet{
+            display: flex;
+            justify-content: center;
         }
     }
 

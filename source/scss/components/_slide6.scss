@@ -31,6 +31,9 @@
     @include tablet {
       justify-content: flex-start;
       margin-left: -60px;
+      img,picture{
+        height: 50vh;
+      }
     }
     @include mobile {
       picture,

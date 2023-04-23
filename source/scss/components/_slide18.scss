@@ -7,8 +7,16 @@
             justify-content: center;
         }
 
+        @include tablet{
+            grid-gap: 20px;
+        }
+
         @include small-tablet{
             padding: 0;
+        }
+
+        @include mobile{
+            justify-content: flex-start;
         }
     }
 
@@ -26,7 +34,7 @@
 
         @include tablet{
             flex-direction: column;
-            height: 100%;
+            height: fit-content;
         }
 
         @include small-tablet{
@@ -38,14 +46,14 @@
             padding-top: 20px;
         }
 
-        .default-slide__info{
-            @include for-tablet{
-                display: none;
-            }
-            @include tablet{
-                display: flex;
-            }
-        }
+        // .default-slide__info{
+        //     @include for-tablet{
+        //         display: none;
+        //     }
+        //     @include tablet{
+        //         display: flex;
+        //     }
+        // }
         
     }
 
@@ -55,8 +63,9 @@
         }
 
         @include tablet{
-            display: none;
+            max-width: 100%;
         }
+      
     }
     .default-slide__picture{
 
@@ -69,18 +78,18 @@
             }
 
             @include tablet{
-                height: 45vh;
+                height: 50vh;
             }
 
             @include mobile{
-                height: 50vh;
-                margin-left: -20px;
-                margin-right: -60px;
-                width: calc(95% + 90px);
+                height: 60vh;
+                // margin-left: -20px;
+                // margin-right: -60px;
+                // width: calc(95% + 90px);
             }
 
             @include ios{
-                height: 40vh;
+                height: 50vh;
             }
         }
 

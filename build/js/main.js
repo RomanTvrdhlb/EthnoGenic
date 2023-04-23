@@ -11,11 +11,7 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/burger */ "./source/js/components/burger.js");
 /* harmony import */ var _components_sliders__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/sliders */ "./source/js/components/sliders.js");
-// import './components/getDinamicHeight';
 
-// import './components/aos';
-// import './components/validateRules';
-// import './components/observer';
 
 
 /***/ }),
@@ -154,7 +150,10 @@ const mainSwiper = new (_vendor_swiper__WEBPACK_IMPORTED_MODULE_0___default())('
   freemode: true,
   spaceBetween: 50,
   direction: 'vertical',
-  mousewheel: true
+  mousewheel: true,
+  navigation: {
+    nextEl: '.swiper-button-next'
+  }
 });
 
 /***/ }),

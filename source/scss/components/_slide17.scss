@@ -1,72 +1,111 @@
-.slide17{
+.slide17 {
+  .default-slide__box {
+    grid-template-columns: 100%;
+    padding-top: 40px;
+    grid-gap: 20px;
+    align-items: start;
 
-    .default-slide__box{
-        grid-template-columns: 100%;
-        padding-top: 40px;
-        grid-gap: 20px;
-        align-items: start;
+    @include laptop {
+      align-items: center;
+    }
+  }
 
-        @include laptop{
-            align-items: center;
-        }
+  .default-slide__inner {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    align-items: center;
+    height: fit-content;
+
+    @include laptop {
+      align-items: start;
     }
 
-    .default-slide__inner{
-        display: grid;
-        grid-template-columns: 1.7fr 1fr;
-        align-items: center;
-        height: fit-content;
-
-        @include laptop{
-            align-items: start;
-        }
-
-        &--mode{
-            grid-template-columns: 1fr 1.6fr;
-
-            .default-slide__info{
-                max-width: 650px;
-                justify-self: center;
-            }
-
-            .default-slide__picture{
-                margin-top: -20vh;
-                img,picture{
-                    height: 55vh;
-
-                    @include laptop{
-                        height: 40vh;
-                    }
-                }
-                
-            }
-
-            @include laptop{
-                margin-top: -25vh;
-            }
-        }
+    @include tablet {
+      display: flex;
+      flex-direction: column-reverse;
     }
 
-    .default-slide__info{
-        max-width: 615px;
+    &--mode {
+      grid-template-columns: 1fr 1.6fr;
+
+      .default-slide__info {
+        max-width: 650px;
         justify-self: center;
 
-        @include laptop{
-            padding-top: 30px;
+        @include tablet {
+          padding: 0;
+          max-width: 100%;
         }
-    }
+      }
 
-    .default-slide__picture{
+      .default-slide__picture {
+        margin-top: -20vh;
+        img,
+        picture {
+          height: 55vh;
 
-        img,picture{
-            width: auto;
+          @include laptop {
             height: 40vh;
-
-            @include laptop{
-                height: 28vh;
-            }
+          }
         }
+
+        @include tablet {
+          display: none;
+        }
+      }
+
+      @include laptop {
+        margin-top: -25vh;
+      }
+
+      @include tablet {
+        margin: 0;
+      }
+    }
+  }
+
+  .default-slide__info {
+    max-width: 615px;
+    justify-self: center;
+
+    @include laptop {
+      padding-top: 30px;
     }
 
+    @include tablet {
+      max-width: 100%;
+    }
+  }
 
+  .default-slide__picture {
+    img,
+    picture {
+      width: auto;
+      height: 40vh;
+
+      @include laptop {
+        height: 28vh;
+      }
+
+      @include tablet {
+        height: 50vh;
+      }
+
+      @include small-tablet {
+        height: 60vh;
+      }
+
+      @include mobile {
+        height: 50vh;
+      }
+
+      @include ios {
+        height: 45vh;
+      }
+    }
+    @include tablet {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }

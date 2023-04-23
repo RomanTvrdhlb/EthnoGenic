@@ -1,5 +1,8 @@
 .slide13 {
 
+    @include tablet{
+        display: none;
+    }
     .default-slide__info{
         display: flex;
         @include for-small-tablet{
@@ -23,32 +26,32 @@
             padding: 40px 80px;
         }
 
-        @include tablet{
-            justify-content: center;
-        }
+        // @include tablet{
+        //     justify-content: center;
+        // }
 
-        @include small-tablet{
-            padding: 40px 60px;
-        }
+        // @include small-tablet{
+        //     padding: 40px 60px;
+        // }
 
-        @include mobile{
-            padding: 0;
-        }
+        // @include mobile{
+        //     padding: 0;
+        // }
 
     }
 
     p{
         max-width: 710px;
 
-      @include small-tablet{
-        display: none;
-      }
+    //   @include small-tablet{
+    //     display: none;
+    //   }
       
-      @include mobile{
-        span{
-            max-width: 300px;
-        }
-      }
+    //   @include mobile{
+    //     span{
+    //         max-width: 300px;
+    //     }
+    //   }
     }
 
   .default-slide__picture {
@@ -66,14 +69,14 @@
             width: 100%;
         }
 
-        @include small-tablet{
-            height: 50vh;
-        }
+        // @include small-tablet{
+        //     height: 50vh;
+        // }
 
-        @include mobile{
-            height: auto;
-            width: 100%;
-        }
+        // @include mobile{
+        //     height: auto;
+        //     width: 100%;
+        // }
       }
     
     @include notebook {

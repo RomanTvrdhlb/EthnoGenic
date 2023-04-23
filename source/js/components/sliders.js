@@ -10,6 +10,9 @@ const mainSwiper = new Swiper('.main-swiper', {
   direction: 'vertical',
   mousewheel: true,
 
+  navigation: {
+    nextEl: '.swiper-button-next',
+  },
 });
 
 

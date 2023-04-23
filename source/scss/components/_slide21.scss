@@ -1,4 +1,12 @@
 .slide21 {
+
+
+    .info-list{
+
+      @include tablet{
+        grid-gap: 25px;
+      }
+    }
   .default-slide__picture {
     display: flex;
     align-items: center;

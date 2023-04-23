@@ -19,10 +19,6 @@
 
       @include tablet{
         width: auto;
-        height: 60vh;
-      }
-
-      @include small-tablet{
         height: 55vh;
       }
 

@@ -50,6 +50,10 @@
           height: auto;
         }
       }
+
+      @include ios{
+        width: calc(80% + 120px);
+      }
     }
   
     p{

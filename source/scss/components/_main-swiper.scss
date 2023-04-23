@@ -9,4 +9,51 @@
     &__slide{
       height: 100vh;
     }
+
+    &__picture{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      @media (min-width: (1900px)) {
+          padding: 40px;
+        }
+
+      picture,img{
+          height: 100vh;
+          width: 100vw;  
+
+          @include small-tablet{
+              width: 100%;
+              height: 100vh;
+          }
+      }
+
+  }
+  }
+
+  .main-swiper .none{
+
+    @include tablet{
+      display: none;
+    }
+  }
+
+  .swiper-button-next{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include for-small-tablet{
+      display: none;
+    }
   }

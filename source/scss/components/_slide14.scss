@@ -4,13 +4,22 @@
     flex-direction: column;
     grid-gap: 20px;
 
-    @include tablet {
-      grid-gap: 50px;
-    }
+    // @include tablet {
+    //   grid-gap: 50px;
+    // }
 
-    @include small-tablet {
-      padding: 20px 0;
-    }
+    // @include small-tablet {
+    //   padding: 20px 0;
+    // }
+ 
+
+  @include small-tablet{
+      padding: 40px 60px;
+  }
+
+  @include mobile{
+      padding: 40px 0 0 ;
+  }
   }
   .default-slide__inner {
     display: grid;
@@ -18,9 +27,6 @@
     grid-gap: 130px;
     align-items: center;
 
-    @include small-tablet {
-      display: none;
-    }
 
     &--mode {
       margin-top: -3%;
@@ -33,19 +39,19 @@
         margin: 0;
       }
 
-      @include small-tablet {
-        display: flex;
-        flex-direction: column-reverse;
-        grid-gap: 30px;
-      }
+     @include small-tablet{
+      height: fit-content;
+      padding-bottom: 40px;
+     }
 
       .default-slide__picture {
         display: flex;
         justify-content: end;
         @include small-tablet {
-          display: flex;
-          height: 100%;
-          justify-content: center;
+          // display: flex;
+          // height: 100%;
+          // justify-content: center;
+          display: none;
         }
         img,
         picture {
@@ -84,6 +90,13 @@
 
       
     }
+
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+      grid-gap: 30px;
+      width: 100%;
+    }
   }
 
   p {
@@ -99,21 +112,31 @@
       padding-bottom: 5vh;
     }
 
-    @include small-tablet {
-      display: none;
+    @include small-tablet{
+      width: 100%;
+      text-align: start;
+      padding: 0;
     }
   }
 
   .default-slide__info {
-    @include for-small-tablet{
-      display: none;
-    }
+    // @include for-small-tablet{
+    //   display: none;
+    // }
+    // @include small-tablet {
+    //   display: flex;
+    // }
     @include small-tablet {
-      display: flex;
+      display: none;
     }
   }
 
   .default-slide__picture {
+
+    @include small-tablet{
+      display: flex;
+      justify-content: center;
+    }
     img,
     picture {
       height: 45vh;
@@ -128,8 +151,13 @@
       }
 
       @include small-tablet {
-        height: 40vh;
+        height: 55vh;
       }
+
+      @include mobile{
+        height: 50vh;
+        width: auto;
+    }
     }
   }
 }

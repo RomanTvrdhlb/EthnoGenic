@@ -8,6 +8,14 @@
       grid-gap: 20px;
       justify-content: center;
     }
+
+    @include small-tablet {
+      padding: 40px 60px;
+    }
+    @include mobile {
+      justify-content: flex-start;
+      padding: 40px 0 0;
+    }
   }
 
   .default-slide__inner {
@@ -55,6 +63,17 @@
           width: fit-content;
         }
       }
+
+      @include small-tablet {
+        display: none !important;
+      }
+    }
+
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+      grid-gap: 30px;
+      width: 100%;
     }
   }
 
@@ -63,6 +82,13 @@
 
     @include laptop {
       max-width: 55%;
+    }
+
+    @include small-tablet {
+      width: 100%;
+      max-width: 100%;
+      text-align: start;
+      padding: 0;
     }
   }
 
@@ -76,6 +102,10 @@
 
       @include laptop {
         height: 30vh;
+      }
+
+      @include small-tablet {
+        height: 75vh;
       }
     }
 
