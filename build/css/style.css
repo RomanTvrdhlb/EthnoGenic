@@ -1269,6 +1269,7 @@ body.fixed-body {
 @media (max-width: 576px) {
   body {
     max-height: -webkit-fill-available;
+    height: calc(var(--vh, 1vh) * 100);
   }
 }
 

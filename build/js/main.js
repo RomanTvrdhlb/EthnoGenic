@@ -11,6 +11,9 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/burger */ "./source/js/components/burger.js");
 /* harmony import */ var _components_sliders__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/sliders */ "./source/js/components/sliders.js");
+/* harmony import */ var _components_viewPortCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/viewPortCheck */ "./source/js/components/viewPortCheck.js");
+/* harmony import */ var _components_viewPortCheck__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_viewPortCheck__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 
@@ -185,6 +188,17 @@ const mainSwiper = new (_vendor_swiper__WEBPACK_IMPORTED_MODULE_0___default())("
     }
   }
 });
+
+/***/ }),
+
+/***/ "./source/js/components/viewPortCheck.js":
+/*!***********************************************!*\
+  !*** ./source/js/components/viewPortCheck.js ***!
+  \***********************************************/
+/***/ (function() {
+
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 /***/ }),
 
