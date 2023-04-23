@@ -14,6 +14,8 @@ const observer = new IntersectionObserver((entries) => {
       mainLinks.forEach((link) =>{
         if (link.getAttribute('href').replace('#', '') == entry.target.id) {
           addCustomClass(link, 'active');
+
+       
         } else {
           removeCustomClass(link, 'active');
         }
@@ -32,6 +34,13 @@ mainLinks.map(function(link){
       e.preventDefault();
       removeClassInArray(mainLinks, 'active');
       addCustomClass(link, 'active');
+
+      observSections.map(function (item) {
+        removeCustomClass(item, "swiper-slide-active");
+        if (link.getAttribute('href').replace('#', '') == item.id){
+        addCustomClass(item, "swiper-slide-active");
+        }
+    });
 
       const id = e.target.getAttribute('href').replace('#', '');
       let headerHeight = header.clientHeight;
