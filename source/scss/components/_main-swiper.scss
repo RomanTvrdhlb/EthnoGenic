@@ -29,8 +29,12 @@
         }
 
         @include mobile{
-          height: 91dvh;
+          height: 100dvh;
         }
+
+        @media not all and (hover:hover) {
+          height: 91dvh;
+      }
       picture,img{
           height: 100vh;
           width: 100vw;  

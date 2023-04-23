@@ -1837,6 +1837,11 @@ p {
 }
 @media (max-width: 576px) {
   .main-swiper__picture {
+    height: 100dvh;
+  }
+}
+@media not all and (hover: hover) {
+  .main-swiper__picture {
     height: 91dvh;
   }
 }
@@ -5132,7 +5137,7 @@ footer {
 @media (max-width: 414px) {
   .first-slide__inner {
     padding-top: 41px;
-    padding-bottom: 20dvh;
+    padding-bottom: 130px;
   }
 }
 @media (max-width: 576px) {
