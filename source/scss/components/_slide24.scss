@@ -23,7 +23,11 @@
         }
 
         @include mobile{
-            grid-gap: 40px;
+            grid-gap: 20px;
+        }
+
+        @include ios{
+            padding-top: 20px;
         }
     }
 

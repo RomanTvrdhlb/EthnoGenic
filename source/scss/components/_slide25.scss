@@ -5,6 +5,11 @@
 
         @include small-tablet{
             justify-content: center;
+            padding-top: 0;
+        }
+
+        @include ios{
+            margin-top: -10%;
         }
 
     }

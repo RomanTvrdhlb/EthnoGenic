@@ -1854,10 +1854,10 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  bottom: 40px;
+  top: 95%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 30;
 }
 @media (min-width: 768px) {
@@ -2241,7 +2241,7 @@ p {
 @media (max-width: 414px) {
   .slide3 .default-slide__picture picture,
   .slide3 .default-slide__picture img {
-    height: 60vh;
+    height: 50vh;
   }
 }
 
@@ -2384,7 +2384,7 @@ p {
 @media (max-width: 576px) and (max-width: 414px) {
   .slide4 .default-slide__picture img, .slide4 .default-slide__picture picture {
     width: auto;
-    height: 40vh;
+    height: 30vh;
   }
 }
 
@@ -2577,7 +2577,7 @@ p {
 }
 @media (max-width: 414px) {
   .slide7 .default-slide__picture {
-    width: 85%;
+    width: 70%;
   }
 }
 .slide7 p {
@@ -2621,6 +2621,11 @@ p {
             justify-content: flex-start;
   }
 }
+@media (max-width: 414px) {
+  .slide8 .default-slide__box {
+    padding-top: 20px;
+  }
+}
 .slide8 p {
   grid-gap: 60px;
 }
@@ -2659,6 +2664,12 @@ p {
     margin-left: -30px;
     margin-right: -60px;
     width: calc(100% + 90px);
+  }
+}
+@media (max-width: 414px) {
+  .slide8 .default-slide__picture img,
+  .slide8 .default-slide__picture picture {
+    width: calc(80% + 90px);
   }
 }
 
@@ -2926,6 +2937,9 @@ p {
   .slide11 .default-slide__inner {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 .slide11 .default-slide__inner--mode {
@@ -3081,6 +3095,11 @@ p {
     padding: 20px 0;
   }
 }
+@media (max-width: 414px) {
+  .slide12 .default-slide__box {
+    grid-gap: 40px;
+  }
+}
 .slide12 .default-slide__inner {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
@@ -3106,6 +3125,13 @@ p {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+  }
+}
+@media (max-width: 414px) {
+  .slide12 .default-slide__inner--mode .default-slide__picture {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 .slide12 .default-slide__inner--mode .default-slide__picture img,
@@ -3250,7 +3276,7 @@ p {
 @media (max-width: 414px) {
   .slide12 .default-slide__picture img,
   .slide12 .default-slide__picture picture {
-    height: 27vh !important;
+    height: 21vh !important;
   }
 }
 @media (max-width: 767px) {
@@ -3455,6 +3481,13 @@ p {
     width: 100%;
   }
 }
+@media (max-width: 414px) {
+  .slide14 .default-slide__inner {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
 .slide14 p {
   height: 100%;
   -webkit-box-pack: center;
@@ -3496,6 +3529,13 @@ p {
             justify-content: center;
   }
 }
+@media (max-width: 576px) {
+  .slide14 .default-slide__picture {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
 .slide14 .default-slide__picture img,
 .slide14 .default-slide__picture picture {
   height: 45vh;
@@ -3524,6 +3564,12 @@ p {
   .slide14 .default-slide__picture picture {
     height: 50vh;
     width: auto;
+  }
+}
+@media (max-width: 414px) {
+  .slide14 .default-slide__picture img,
+  .slide14 .default-slide__picture picture {
+    height: 40vh;
   }
 }
 
@@ -3680,7 +3726,7 @@ p {
 @media (max-width: 414px) {
   .slide15 .default-slide__picture img,
   .slide15 .default-slide__picture picture {
-    height: 60vh;
+    height: 55vh;
   }
 }
 @media (max-width: 1239px) {
@@ -3793,7 +3839,7 @@ p {
 }
 @media (max-width: 414px) {
   .slide16 .default-slide__picture img, .slide16 .default-slide__picture picture {
-    height: 35vh;
+    height: 30vh;
   }
 }
 @media (max-width: 1024px) {
@@ -3937,7 +3983,7 @@ p {
 @media (max-width: 414px) {
   .slide17 .default-slide__picture img,
   .slide17 .default-slide__picture picture {
-    height: 40vh;
+    height: 35vh;
   }
 }
 @media (max-width: 1024px) {
@@ -4112,6 +4158,12 @@ p {
             justify-content: flex-end;
   }
 }
+@media (max-width: 414px) {
+  .slide19 .default-slide__box {
+    padding-top: 20px;
+    grid-gap: 20px;
+  }
+}
 .slide19 .default-slide__info {
   max-width: 960px;
 }
@@ -4178,7 +4230,7 @@ p {
 @media (max-width: 414px) {
   .slide19 .default-slide__picture img,
   .slide19 .default-slide__picture picture {
-    height: 25vh;
+    height: 22vh;
   }
 }
 @media (max-width: 1024px) {
@@ -4294,7 +4346,7 @@ p {
 @media (max-width: 414px) {
   .slide21 .default-slide__picture img,
   .slide21 .default-slide__picture picture {
-    height: 55vh;
+    height: 45vh;
   }
 }
 @media (max-width: 1024px) {
@@ -4344,7 +4396,7 @@ p {
 @media (max-width: 414px) {
   .slide22 .default-slide__picture img,
   .slide22 .default-slide__picture picture {
-    height: 40vh;
+    height: 35vh;
   }
 }
 @media (max-width: 1024px) {
@@ -4376,6 +4428,7 @@ p {
 @media (max-width: 414px) {
   .slide22 .default-slide__info {
     grid-gap: 30px;
+    padding: 0;
   }
 }
 
@@ -4496,7 +4549,7 @@ p {
 @media (max-width: 414px) {
   .slide23 .default-slide__inner--mode .default-slide__picture img,
   .slide23 .default-slide__inner--mode .default-slide__picture picture {
-    height: 22vh;
+    height: 18vh;
   }
 }
 @media (max-width: 1239px) {
@@ -4581,7 +4634,7 @@ p {
 @media (max-width: 414px) {
   .slide23 .default-slide__picture img,
   .slide23 .default-slide__picture picture {
-    height: 17vh;
+    height: 11vh;
   }
 }
 .slide23 .default-slide__icon {
@@ -4652,7 +4705,12 @@ p {
 }
 @media (max-width: 576px) {
   .slide24 .default-slide__box {
-    grid-gap: 40px;
+    grid-gap: 20px;
+  }
+}
+@media (max-width: 414px) {
+  .slide24 .default-slide__box {
+    padding-top: 20px;
   }
 }
 .slide24 .contact-form {
@@ -4709,6 +4767,12 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-top: 0;
+  }
+}
+@media (max-width: 414px) {
+  .slide25 .default-slide__box {
+    margin-top: -10%;
   }
 }
 .slide25 .default-slide__inner {
@@ -4907,7 +4971,7 @@ p {
 }
 @media (max-width: 414px) {
   .contact-form__area {
-    min-height: 110px;
+    min-height: 60px;
   }
 }
 .contact-form .just-validate-error-label {

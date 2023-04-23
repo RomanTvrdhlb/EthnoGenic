@@ -4,15 +4,6 @@
     flex-direction: column;
     grid-gap: 20px;
 
-    // @include tablet {
-    //   grid-gap: 50px;
-    // }
-
-    // @include small-tablet {
-    //   padding: 20px 0;
-    // }
- 
-
   @include small-tablet{
       padding: 40px 60px;
   }
@@ -97,6 +88,10 @@
       grid-gap: 30px;
       width: 100%;
     }
+
+    @include ios{
+      height: fit-content;
+    }
   }
 
   p {
@@ -120,12 +115,6 @@
   }
 
   .default-slide__info {
-    // @include for-small-tablet{
-    //   display: none;
-    // }
-    // @include small-tablet {
-    //   display: flex;
-    // }
     @include small-tablet {
       display: none;
     }
@@ -136,6 +125,10 @@
     @include small-tablet{
       display: flex;
       justify-content: center;
+    }
+
+    @include mobile{
+      height: fit-content;
     }
     img,
     picture {
@@ -157,6 +150,10 @@
       @include mobile{
         height: 50vh;
         width: auto;
+    }
+
+    @include ios{
+      height: 40vh;
     }
     }
   }
