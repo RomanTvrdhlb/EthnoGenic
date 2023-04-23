@@ -8,6 +8,10 @@
     @include small-tablet{
         max-width: 100%;
     }
+
+    @include ios{
+        grid-gap: 10px;
+    }
     
     &__title{
         color: rgba(var(--cl-a),1.0);
@@ -63,7 +67,7 @@
         }
 
         @include ios{
-            min-height: 60px;
+            min-height: 57px;
           }
     }
 

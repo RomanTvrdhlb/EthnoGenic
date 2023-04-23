@@ -72,7 +72,8 @@
           }
 
           @include ios{
-            height: 18vh;
+            height: 25vh;
+            display: flex;
           }
         }
 
@@ -144,7 +145,7 @@
       }
 
       @include ios{
-        height: 11vh;
+        display: none;
       }
     }
   }
