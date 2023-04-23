@@ -197,8 +197,24 @@ const mainSwiper = new (_vendor_swiper__WEBPACK_IMPORTED_MODULE_0___default())("
   \***********************************************/
 /***/ (function() {
 
-let vh = window.innerHeight * 0.01;
+let vh = window.innerHeight;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+// (function init100vh(){
+//     function setHeight() {
+//       var vh = window.innerHeight * 0.01;
+//       document.documentElement.style.setProperty('--vh', `${vh}px`);
+//     }
+//     setHeight();
+//     window.addEventListener('resize', setHeight);
+//   })();
+
+// module.exports = {
+//     plugins: [
+//   +   require('postcss-100vh-fix'),
+//       require('autoprefixer')
+//     ]
+//   }
 
 /***/ }),
 
