@@ -134,6 +134,10 @@
       @include mobile{
         height: 30vh !important;
       }
+
+      @include ios{
+        height: 27vh !important;
+      }
     }
 
     @include small-tablet{

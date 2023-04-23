@@ -107,6 +107,10 @@
       @include small-tablet {
         height: 75vh;
       }
+
+      @include ios{
+        height: 60vh;
+      }
     }
 
     @include laptop {

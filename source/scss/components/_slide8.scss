@@ -20,6 +20,10 @@
     @include laptop {
       max-width: 980px;
     }
+
+    @include ios{
+      grid-gap: 0;
+    }
   }
 
   .default-slide__picture {

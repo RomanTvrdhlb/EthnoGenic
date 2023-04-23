@@ -16,11 +16,14 @@
         @include tablet{
             flex-direction: column-reverse;
             justify-content: flex-end;
-           
         }
 
         @include small-tablet{
             grid-gap: 80px;
+        }
+
+        @include mobile{
+            grid-gap: 40px;
         }
     }
 

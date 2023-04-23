@@ -115,6 +115,10 @@
         margin-right: -60px;
         width: calc(95% + 90px);
       }
+
+      @include ios{
+        height: 60vh;
+      }
     }
   }
 }

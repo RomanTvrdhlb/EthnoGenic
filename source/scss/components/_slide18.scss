@@ -83,13 +83,10 @@
 
             @include mobile{
                 height: 60vh;
-                // margin-left: -20px;
-                // margin-right: -60px;
-                // width: calc(95% + 90px);
             }
 
             @include ios{
-                height: 50vh;
+                height: 45vh;
             }
         }
 

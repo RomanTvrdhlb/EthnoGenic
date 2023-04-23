@@ -70,6 +70,10 @@
           @include tablet {
             height: 25vh;
           }
+
+          @include ios{
+            height: 22vh;
+          }
         }
 
         @include laptop {

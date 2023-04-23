@@ -103,6 +103,13 @@
       width: 100%;
       height: auto;
     }
+
+      @include ios{
+        img,picture{
+        width: auto;
+        height: 40vh;
+      }
+    }
   }
   }
 }

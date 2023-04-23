@@ -2214,6 +2214,12 @@ p {
     width: calc(95% + 90px);
   }
 }
+@media (max-width: 414px) {
+  .slide3 .default-slide__picture picture,
+  .slide3 .default-slide__picture img {
+    height: 60vh;
+  }
+}
 
 .slide4 .default-slide__box {
   grid-template-columns: 60%;
@@ -2351,6 +2357,12 @@ p {
     height: auto;
   }
 }
+@media (max-width: 576px) and (max-width: 414px) {
+  .slide4 .default-slide__picture img, .slide4 .default-slide__picture picture {
+    width: auto;
+    height: 40vh;
+  }
+}
 
 .slide5 .default-slide__picture {
   display: -webkit-box;
@@ -2373,6 +2385,18 @@ p {
 @media (max-width: 1024px) {
   .slide5 .default-slide__picture {
     max-width: 50vh;
+  }
+}
+@media (max-width: 414px) {
+  .slide5 .default-slide__picture {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .slide5 .default-slide__picture picture,
+  .slide5 .default-slide__picture img {
+    width: auto;
+    height: 45vh;
   }
 }
 
@@ -2437,6 +2461,13 @@ p {
   .slide6 .default-slide__picture img {
     width: 100%;
     height: auto;
+  }
+}
+@media (max-width: 414px) {
+  .slide6 .default-slide__picture picture,
+  .slide6 .default-slide__picture img {
+    width: auto;
+    height: 35vh;
   }
 }
 .slide6 .default-slide__info {
@@ -2522,7 +2553,7 @@ p {
 }
 @media (max-width: 414px) {
   .slide7 .default-slide__picture {
-    width: calc(80% + 120px);
+    width: 85%;
   }
 }
 .slide7 p {
@@ -2572,6 +2603,11 @@ p {
 @media (max-width: 1239px) {
   .slide8 p {
     max-width: 980px;
+  }
+}
+@media (max-width: 414px) {
+  .slide8 p {
+    grid-gap: 0;
   }
 }
 .slide8 .default-slide__picture {
@@ -2748,6 +2784,12 @@ p {
     height: 55vh;
   }
 }
+@media (max-width: 414px) {
+  .slide9 .default-slide__picture picture,
+  .slide9 .default-slide__picture img {
+    height: 45vh;
+  }
+}
 
 .slide10 .default-slide__box {
   grid-gap: clamp(40px, 3.509vw, 60px);
@@ -2808,6 +2850,11 @@ p {
     width: calc(100% + 90px);
   }
 }
+@media (max-width: 414px) {
+  .slide10 .default-slide__picture img, .slide10 .default-slide__picture picture {
+    height: 45vh;
+  }
+}
 
 @media (max-width: 1239px) {
   .slide11 .default-slide__box {
@@ -2817,6 +2864,11 @@ p {
 @media (max-width: 767px) {
   .slide11 .default-slide__box {
     padding-top: 15px;
+  }
+}
+@media (max-width: 414px) {
+  .slide11 .default-slide__box {
+    grid-gap: 10px;
   }
 }
 .slide11 .default-slide__inner {
@@ -2927,6 +2979,12 @@ p {
     margin-left: -30px;
     margin-right: -60px;
     width: calc(100% + 90px);
+  }
+}
+@media (max-width: 414px) {
+  .slide11 .default-slide__inner--mode .default-slide__picture img,
+  .slide11 .default-slide__inner--mode .default-slide__picture picture {
+    height: 30vh;
   }
 }
 .slide11 p {
@@ -3163,6 +3221,12 @@ p {
   .slide12 .default-slide__picture img,
   .slide12 .default-slide__picture picture {
     height: 30vh !important;
+  }
+}
+@media (max-width: 414px) {
+  .slide12 .default-slide__picture img,
+  .slide12 .default-slide__picture picture {
+    height: 27vh !important;
   }
 }
 @media (max-width: 767px) {
@@ -3589,6 +3653,12 @@ p {
     height: 75vh;
   }
 }
+@media (max-width: 414px) {
+  .slide15 .default-slide__picture img,
+  .slide15 .default-slide__picture picture {
+    height: 60vh;
+  }
+}
 @media (max-width: 1239px) {
   .slide15 .default-slide__picture {
     margin: 0 !important;
@@ -3695,6 +3765,11 @@ p {
 @media (max-width: 576px) {
   .slide16 .default-slide__picture img, .slide16 .default-slide__picture picture {
     height: 40vh;
+  }
+}
+@media (max-width: 414px) {
+  .slide16 .default-slide__picture img, .slide16 .default-slide__picture picture {
+    height: 35vh;
   }
 }
 @media (max-width: 1024px) {
@@ -3838,7 +3913,7 @@ p {
 @media (max-width: 414px) {
   .slide17 .default-slide__picture img,
   .slide17 .default-slide__picture picture {
-    height: 45vh;
+    height: 40vh;
   }
 }
 @media (max-width: 1024px) {
@@ -3964,7 +4039,7 @@ p {
 }
 @media (max-width: 414px) {
   .slide18 .default-slide__picture img, .slide18 .default-slide__picture picture {
-    height: 50vh;
+    height: 45vh;
   }
 }
 @media (max-width: 1024px) {
@@ -4079,7 +4154,7 @@ p {
 @media (max-width: 414px) {
   .slide19 .default-slide__picture img,
   .slide19 .default-slide__picture picture {
-    height: 30vh;
+    height: 25vh;
   }
 }
 @media (max-width: 1024px) {
@@ -4192,6 +4267,12 @@ p {
     height: 60vh;
   }
 }
+@media (max-width: 414px) {
+  .slide21 .default-slide__picture img,
+  .slide21 .default-slide__picture picture {
+    height: 55vh;
+  }
+}
 @media (max-width: 1024px) {
   .slide21 .default-slide__picture {
     -webkit-box-pack: center;
@@ -4236,6 +4317,12 @@ p {
     height: 45vh;
   }
 }
+@media (max-width: 414px) {
+  .slide22 .default-slide__picture img,
+  .slide22 .default-slide__picture picture {
+    height: 40vh;
+  }
+}
 @media (max-width: 1024px) {
   .slide22 .default-slide__picture {
     -webkit-box-pack: center;
@@ -4260,6 +4347,11 @@ p {
 @media (max-width: 576px) {
   .slide22 .default-slide__info {
     padding-top: 50px;
+  }
+}
+@media (max-width: 414px) {
+  .slide22 .default-slide__info {
+    grid-gap: 30px;
   }
 }
 
@@ -4375,6 +4467,12 @@ p {
   .slide23 .default-slide__inner--mode .default-slide__picture img,
   .slide23 .default-slide__inner--mode .default-slide__picture picture {
     height: 25vh;
+  }
+}
+@media (max-width: 414px) {
+  .slide23 .default-slide__inner--mode .default-slide__picture img,
+  .slide23 .default-slide__inner--mode .default-slide__picture picture {
+    height: 22vh;
   }
 }
 @media (max-width: 1239px) {
@@ -4526,6 +4624,11 @@ p {
 @media (max-width: 767px) {
   .slide24 .default-slide__box {
     grid-gap: 80px;
+  }
+}
+@media (max-width: 576px) {
+  .slide24 .default-slide__box {
+    grid-gap: 40px;
   }
 }
 .slide24 .contact-form {
@@ -4777,6 +4880,11 @@ p {
   color: rgba(var(--cl-c), 1);
   font-family: var(--font-family);
   font-size: 15px;
+}
+@media (max-width: 414px) {
+  .contact-form__area {
+    min-height: 110px;
+  }
 }
 .contact-form .just-validate-error-label {
   position: absolute;

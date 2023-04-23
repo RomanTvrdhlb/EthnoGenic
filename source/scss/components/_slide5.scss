@@ -15,6 +15,15 @@
         @include tablet {
           max-width: 50vh;
         }
+
+        @include ios{
+          justify-content: center;
+          picture,
+          img {
+            width: auto;
+            height: 45vh;
+          }
+        }
     }
     
 }

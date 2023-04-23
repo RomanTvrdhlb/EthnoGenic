@@ -42,6 +42,13 @@
         height: auto;
       }
     }
+    @include ios {
+      picture,
+      img {
+        width: auto;
+        height: 35vh;
+      }
+    }
   }
 
   .default-slide__info {

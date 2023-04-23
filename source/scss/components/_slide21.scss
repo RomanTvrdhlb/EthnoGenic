@@ -27,6 +27,10 @@
       @include small-tablet {
         height: 60vh;
       }
+
+      @include ios{
+        height: 55vh;
+      }
     }
 
     @include tablet {

@@ -25,6 +25,10 @@
       @include mobile{
         height: 45vh;
       }
+
+      @include ios{
+        height: 40vh;
+      }
     }
 
     @include tablet {
@@ -46,6 +50,10 @@
 
     @include mobile {
       padding-top: 50px;
+    }
+
+    @include ios{
+      grid-gap: 30px;
     }
   }
 }
