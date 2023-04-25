@@ -1,6 +1,7 @@
 .first-slide{
     height: 100vh;
     width: 100%;
+    position: relative;
 
     @include mobile{
         height: 100dvh;
@@ -17,8 +18,10 @@
         
 
         @media (min-width: (1900px)) {
-            margin-left: -2.5%;
+            margin-left: -2.5%; 
           }
+
+          
 
           @include small-tablet{
             justify-content: space-between;

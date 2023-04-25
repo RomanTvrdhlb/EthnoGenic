@@ -29,6 +29,10 @@ p{
   justify-content: flex-start;
   grid-gap: 115px;
   letter-spacing: -2px;
+
+  @media (max-width: (1550px)) {
+    font-size: 20px;
+  }
   
   @include small-tablet{
     font-size: 15px;
