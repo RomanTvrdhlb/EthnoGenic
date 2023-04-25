@@ -3,6 +3,12 @@
     .default-slide__box{
         grid-template-columns: 1fr 1.6fr;
 
+        @include fix-height{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
         @include laptop{
             display: flex; 
             flex-direction: column-reverse;
@@ -20,7 +26,11 @@
     }
 
     .default-slide__info{
-        max-width: 960px;
+        max-width: 960px; 
+
+        @include fix-height{
+          max-width: 400px;
+        }
 
         @include tablet{
           display: none;
@@ -44,6 +54,11 @@
   
       img,
       picture {
+
+        @include fix-height{
+          height: 90vh !important;
+        }
+
         @include notebook {
           width: auto;
           height: 80vh;

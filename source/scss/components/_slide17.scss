@@ -5,6 +5,10 @@
     grid-gap: 20px;
     align-items: start;
 
+    @include fix-height{
+      padding-top: 20px;
+    }
+
     @include laptop {
       align-items: center;
     }
@@ -15,6 +19,14 @@
     grid-template-columns: 1.7fr 1fr;
     align-items: center;
     height: fit-content;
+
+    @include fix-height{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      grid-gap: 100px;
+    }
 
     @include laptop {
       align-items: start;
@@ -32,6 +44,10 @@
         max-width: 650px;
         justify-self: center;
 
+        @include fix-height{
+          max-width: 500px;
+        }
+
         @include tablet {
           padding: 0;
           max-width: 100%;
@@ -40,9 +56,17 @@
 
       .default-slide__picture {
         margin-top: -20vh;
+
+        @include fix-height{
+          margin-top: -15vh;
+        }
         img,
         picture {
           height: 55vh;
+
+          @include fix-height{
+            height: 60vh;
+          }
 
           @include laptop {
             height: 40vh;
@@ -67,6 +91,10 @@
   .default-slide__info {
     max-width: 615px;
     justify-self: center;
+
+    @include fix-height{
+      max-width: 450px;
+    }
 
     @include laptop {
       padding-top: 30px;

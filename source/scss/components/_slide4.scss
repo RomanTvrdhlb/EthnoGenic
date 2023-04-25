@@ -12,6 +12,13 @@
       flex-direction: column-reverse;
       justify-content: flex-end;
     }
+
+    @include fix-height{
+      grid-gap: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   p {
@@ -23,6 +30,12 @@
 
     @media (min-width: (1900px)) {
       top: 13%;
+    }
+
+    @include fix-height{
+    position: static;
+    grid-gap: 30px;
+
     }
 
     @include notebook {
@@ -72,6 +85,12 @@
         width: 85%;
         display: flex;
         justify-content: end;
+
+
+        @include fix-height{
+          width: 100%;
+          height: auto;
+        }
       }
     }
 

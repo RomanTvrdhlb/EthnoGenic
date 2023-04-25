@@ -13,7 +13,7 @@
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        grid-gap: 134px;
+        grid-gap: 4.979vw;
         height: 100vh;
         
 
@@ -47,9 +47,9 @@
         }
     }
 
-    .main-top{
-        @include mobile{
-            margin-left: -25px;
-        }
-    }
+    // .main-top{
+    //     @include mobile{
+    //         margin-left: -15px;
+    //     }
+    // }
 }

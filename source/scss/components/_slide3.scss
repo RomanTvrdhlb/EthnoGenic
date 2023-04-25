@@ -10,6 +10,13 @@
     @include mobile {
       padding-top: 0;
     }
+
+    @include fix-height{
+      grid-gap: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   .default-slide__inner {
@@ -62,6 +69,10 @@
     left: 50%;
     transform: translateX(-29%);
 
+    @include fix-height{
+      bottom: -11%;
+    }
+
     @include notebook {
       width: 100%;
       max-width: 650px;
@@ -96,6 +107,10 @@
     img {
       width: auto;
       height: 80vh;
+
+      @include fix-height{
+        height: 90vh;
+      }
 
       @include laptop {
         height: 65vh;

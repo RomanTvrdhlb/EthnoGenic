@@ -26,32 +26,20 @@
             padding: 40px 80px;
         }
 
-        // @include tablet{
-        //     justify-content: center;
-        // }
-
-        // @include small-tablet{
-        //     padding: 40px 60px;
-        // }
-
-        // @include mobile{
-        //     padding: 0;
-        // }
-
+        @include fix-height{
+            grid-gap: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
     p{
         max-width: 710px;
 
-    //   @include small-tablet{
-    //     display: none;
-    //   }
-      
-    //   @include mobile{
-    //     span{
-    //         max-width: 300px;
-    //     }
-    //   }
+        @include fix-height{
+            max-width: 400px;
+        }
     }
 
   .default-slide__picture {
@@ -60,6 +48,11 @@
       img {
         width: auto;
         height: 72vh;
+
+        @include fix-height{
+            height: 90vh !important;
+        }
+
         @include notebook{
         height: 60vh;
         }

@@ -37,6 +37,10 @@
     left: 50%;
     transform: translateX(-28%);
 
+    @include fix-height{
+      top: 2%;
+    }
+
     @include notebook {
       transform: translateX(-13%);
     }
@@ -62,6 +66,10 @@
     bottom: 0;
     left: 10%;
     transform: translateX(-15%);
+
+    @include fix-height{
+      left: 5% !important;
+    }
 
     @include notebook {
       transform: none;

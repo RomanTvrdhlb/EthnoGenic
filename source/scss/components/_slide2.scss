@@ -14,6 +14,13 @@
     @include tablet {
       padding-top: 60px;
     }
+
+    @include fix-height{
+      grid-gap: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   p {
@@ -39,7 +46,7 @@
   }
 
   .default-slide__picture {
-
+    
     @include notebook {
         picture,
         img {

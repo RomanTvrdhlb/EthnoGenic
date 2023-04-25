@@ -18,6 +18,14 @@
     grid-gap: 130px;
     align-items: center;
 
+    @include fix-height{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      grid-gap: 80px;
+    }
+
 
     &--mode {
       margin-top: -3%;
@@ -39,15 +47,16 @@
         display: flex;
         justify-content: end;
         @include small-tablet {
-          // display: flex;
-          // height: 100%;
-          // justify-content: center;
           display: none;
         }
         img,
         picture {
           height: 40vh;
           width: auto;
+
+          @include fix-height{
+            height: 45vh;
+          }
 
           @include laptop {
             height: 40vh;

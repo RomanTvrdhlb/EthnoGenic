@@ -1,5 +1,12 @@
 .slide22 {
   .default-slide__box {
+
+    @include fix-height{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     @include small-tablet {
       padding-top: 90px;
     }
@@ -12,6 +19,12 @@
 
     img,
     picture {
+
+      @include fix-height{
+        height: 90vh !important;
+        width: auto !important;
+      }
+
       @include notebook {
         width: 100%;
         height: auto;
@@ -38,6 +51,11 @@
 
   .default-slide__info {
     grid-gap: clamp(40px, 3.509vw, 60px);
+
+    @include fix-height{
+      grid-gap: 30px;
+      max-width: 500px;
+    }
 
     @include laptop {
       max-width: 100%;

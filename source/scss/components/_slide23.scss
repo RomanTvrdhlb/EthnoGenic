@@ -121,6 +121,12 @@
     }
   }
 
+  p{
+    @include fix-height{
+      max-width: 750px;
+    }
+  }
+
   .default-slide__picture {
     position: relative;
 
@@ -128,6 +134,10 @@
     picture {
       width: auto;
       height: 35vh;
+
+      @include fix-height{
+        height: 39vh;
+      }
 
       @include laptop {
         height: 25vh;
@@ -145,9 +155,9 @@
         height: 22vh;
       }
 
-      @include ios{
-        display: none;
-      }
+      // @include ios{
+      //   display: none;
+      // }
     }
   }
 

@@ -11,7 +11,7 @@
   }
 }
 
-@mixin for-laptop  {
+@mixin for-laptop {
   @media (min-width: (1240px)) {
     @content;
   }
@@ -29,7 +29,6 @@
   }
 }
 
-
 @mixin for-mobile {
   @media (min-width: (576px)) {
     @content;
@@ -41,7 +40,6 @@
     @content;
   }
 }
-
 
 @mixin desktop {
   @media (max-width: (1440px)) {
@@ -80,6 +78,11 @@
 }
 @mixin notebook {
   @media (min-width: (1024px)) and (max-width: (1550px)) {
+    @content;
+  }
+}
+@mixin fix-height {
+  @media (min-width: 1240px) and (max-width: 1440px) and (min-height: 580px) and (max-height: 750px) {
     @content;
   }
 }

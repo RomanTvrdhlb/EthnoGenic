@@ -1,7 +1,10 @@
 .slide21 {
 
-
     .info-list{
+
+      @include fix-height{
+        grid-gap: 25px;
+      }
 
       @include tablet{
         grid-gap: 25px;
@@ -14,6 +17,12 @@
 
     img,
     picture {
+
+      @include fix-height{
+        width: auto;
+        height: 80vh !important;
+      }
+
       @include notebook {
         width: auto;
         height: 60vh;

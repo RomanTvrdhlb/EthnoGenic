@@ -1,74 +1,76 @@
 .slide7 {
-    .default-slide__box {
-        grid-gap: clamp(40px, 7.018vw, 120px);
-      @include laptop {
-        padding-top: 40px;
-        grid-template-columns: 60% auto;
-      }
-    }
-  
-    .default-slide__picture {
-      display: flex;
-      align-items: center;
-      justify-content: end;
-  
-      @include notebook {
-        picture,
-        img {
-          width: auto;
-          height: 90vh;
-        }
-      }
-      @include laptop {
-        justify-content: center;
-        picture,
-        img {
-          width: auto;
-          height: 80vh;
-        }
-      }
-      @include tablet {
-        picture,
-        img {
-          height: 50vh;
-        }
-      }
-      @include small-tablet {
-        picture,
-        img {
-          height: 65vh;
-        }
-      }
-      @include mobile {
-        margin-left: -60px;
-        margin-right: -60px;
-        width: calc(100% + 120px);
-        justify-content: end;
-        picture,
-        img {
-          width: 95%;
-          height: auto;
-        }
-      }
-
-      @include ios{
-        width: 70%;
-      }
-    }
-  
-    p{
-        max-width: 650px;
-      grid-gap: clamp(40px, 3.509vw, 60px);
-
-  
-      @include laptop {
-        max-width: 100%;
-        margin-top: -40px;
-      }
-  
-      @include tablet {
-        margin-top: initial;
-      }
+  .default-slide__box {
+    grid-gap: clamp(40px, 7.018vw, 120px);
+    @include laptop {
+      padding-top: 40px;
+      grid-template-columns: 60% auto;
     }
   }
-  
+
+  .default-slide__picture {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    @include notebook {
+      picture,
+      img {
+        width: auto;
+        height: 90vh;
+      }
+    }
+    @include laptop {
+      justify-content: center;
+      picture,
+      img {
+        width: auto;
+        height: 80vh;
+      }
+    }
+    @include tablet {
+      picture,
+      img {
+        height: 50vh;
+      }
+    }
+    @include small-tablet {
+      picture,
+      img {
+        height: 65vh;
+      }
+    }
+    @include mobile {
+      margin-left: -60px;
+      margin-right: -60px;
+      width: calc(100% + 120px);
+      justify-content: end;
+      picture,
+      img {
+        width: 95%;
+        height: auto;
+      }
+    }
+
+    @include ios {
+      width: 70%;
+    }
+  }
+
+  p {
+    max-width: 650px;
+    grid-gap: clamp(40px, 3.509vw, 60px);
+
+    @include fix-height{
+      grid-gap: 30px;
+      }
+
+    @include laptop {
+      max-width: 100%;
+      margin-top: -40px;
+    }
+
+    @include tablet {
+      margin-top: initial;
+    }
+  }
+}

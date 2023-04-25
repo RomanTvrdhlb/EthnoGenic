@@ -1,5 +1,12 @@
 .slide5{
 
+
+  p{
+    @include fix-height{
+      grid-gap: 50px;
+    }
+  }
+
     .default-slide__picture{
         display: flex;
         align-items: center;

@@ -3,6 +3,12 @@
         grid-gap: clamp(40px, 3.509vw, 60px);
         grid-template-columns: 1fr 1.3fr;
 
+        @include fix-height{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         @include laptop{
             display: flex;
             flex-direction: column-reverse;
@@ -19,6 +25,10 @@
         grid-gap: clamp(40px, 3.509vw, 60px);
         max-width: 730px;
 
+        @include fix-height{
+            max-width: 480px;
+        }
+
         @include laptop{
             max-width: 920px;
         }
@@ -33,6 +43,10 @@
         img,picture{
             height: 70vh;
             width: auto;
+
+            @include fix-height{
+                height: 90vh;
+            }
 
             @include laptop{
                 height: 55vh;

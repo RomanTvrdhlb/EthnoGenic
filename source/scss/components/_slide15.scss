@@ -26,14 +26,28 @@
     grid-gap: clamp(45px, 5.848vw, 100px);
     width: 100%;
 
+    @include fix-height{
+      justify-content: center;
+    }
+
+
     &--mode {
       margin-left: initial;
       justify-content: space-between;
+
+      @include fix-height{
+        justify-content: center;
+        align-items: center;
+      }
 
       p {
         max-width: 100%;
         width: 100%;
         padding-left: 2%;
+
+        @include fix-height{
+          max-width: 500px;
+        }
 
         @include laptop {
           max-width: 51%;
@@ -50,9 +64,19 @@
         margin-right: -3%;
         display: flex;
         justify-content: end;
+
+        @include fix-height{
+          width: auto;
+          margin-right: 0;
+        }
+
         img,
         picture {
           height: 60vh;
+
+          @include fix-height{
+            height: 53vh;
+          }
 
           @include laptop {
             height: 40vh;
@@ -79,6 +103,10 @@
 
   p {
     max-width: 730px;
+
+    @include fix-height{
+      max-width: 500px;
+    }
 
     @include laptop {
       max-width: 55%;
