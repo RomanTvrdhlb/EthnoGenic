@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     padding-top: clamp(20px, 2.339vw, 40px);
+    grid-gap: clamp(40px, 4.386vw, 75px);
 
     @include notebook {
       grid-gap: 20px;

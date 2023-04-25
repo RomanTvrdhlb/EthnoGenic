@@ -1591,7 +1591,7 @@ fieldset {
 p {
   color: rgba(var(--cl-a), 1);
   font-family: var(--font-family);
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
@@ -4488,6 +4488,7 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: clamp(20px, 2.339vw, 40px);
+  grid-gap: clamp(40px, 4.386vw, 75px);
 }
 @media (min-width: 1024px) and (max-width: 1550px) {
   .slide23 .default-slide__box {
