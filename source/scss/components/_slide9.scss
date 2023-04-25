@@ -3,7 +3,7 @@
     grid-template-columns: 100%;
     justify-items: center;
 
-    @include notebook{
+    @include notebook {
       padding: 40px;
     }
   }
@@ -33,25 +33,24 @@
     padding-bottom: 15vh;
     max-width: 710px;
     position: absolute;
-    top: 3%;
+    top: 5%;
     left: 50%;
     transform: translateX(-28%);
 
-    @include notebook{
-        max-width: 100%;
-        width: 100%;
-        transform: none;
-        left: 0;
-        padding: 0;
+    @include notebook {
+      transform: translateX(-13%);
     }
 
-    @include laptop{
+    @include laptop {
       max-width: 94%;
+      width: 100%;
       transform: translateX(-50%);
       left: 50%;
+      padding: 0;
     }
 
-    @include tablet{
+    @include tablet {
+      max-width: 100% !important;
       position: static;
       transform: none !important;
       padding: 0;
@@ -64,29 +63,32 @@
     left: 10%;
     transform: translateX(-15%);
 
-    @include notebook{
+    @include notebook {
       transform: none;
-      left: 0;
-      bottom: 3%;
+      left: 13%;
+      bottom: 2%;
+      max-width: 540px;
     }
 
-    @include laptop{
+    @include laptop {
+      max-width: 94%;
       transform: translateX(-50%);
       left: 50%;
+      bottom: 5%;
     }
   }
 
   .default-slide__picture {
-      display: flex;
-      justify-content: center;
- 
+    display: flex;
+    justify-content: center;
+
     picture,
     img {
       width: auto;
       height: 80vh;
 
       @include notebook {
-        height: 60vh;
+        height: 70vh;
       }
 
       @include laptop {
@@ -103,11 +105,11 @@
         width: calc(100% + 90px);
       }
 
-      @include mobile{
+      @include mobile {
         height: 55vh;
       }
 
-      @include ios{
+      @include ios {
         height: 35vh;
       }
     }

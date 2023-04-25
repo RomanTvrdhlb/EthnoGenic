@@ -43,6 +43,10 @@
       grid-gap: 30px;
     }
 
+    @include ios{
+      grid-gap: 10px;
+    }
+
     span:last-child {
       @include laptop {
         padding-top: 40px;
@@ -107,7 +111,7 @@
       @include ios{
         img,picture{
         width: auto;
-        height: 30vh;
+        height: 40dvh;
       }
     }
   }

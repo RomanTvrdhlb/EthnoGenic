@@ -1621,6 +1621,7 @@ p {
     font-size: 15px;
     grid-gap: clamp(20px, 2.632vw, 45px);
     letter-spacing: normal;
+    line-height: normal;
   }
 }
 
@@ -2349,6 +2350,11 @@ p {
     grid-gap: 30px;
   }
 }
+@media (max-width: 414px) {
+  .slide4 p {
+    grid-gap: 10px;
+  }
+}
 @media (max-width: 1239px) {
   .slide4 p span:last-child {
     padding-top: 40px;
@@ -2429,7 +2435,7 @@ p {
 @media (max-width: 576px) and (max-width: 414px) {
   .slide4 .default-slide__picture img, .slide4 .default-slide__picture picture {
     width: auto;
-    height: 30vh;
+    height: 40dvh;
   }
 }
 
@@ -2768,31 +2774,30 @@ p {
   padding-bottom: 15vh;
   max-width: 710px;
   position: absolute;
-  top: 3%;
+  top: 5%;
   left: 50%;
   -webkit-transform: translateX(-28%);
           transform: translateX(-28%);
 }
 @media (min-width: 1024px) and (max-width: 1550px) {
   .slide9 p {
-    max-width: 100%;
-    width: 100%;
-    -webkit-transform: none;
-            transform: none;
-    left: 0;
-    padding: 0;
+    -webkit-transform: translateX(-13%);
+            transform: translateX(-13%);
   }
 }
 @media (max-width: 1239px) {
   .slide9 p {
     max-width: 94%;
+    width: 100%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     left: 50%;
+    padding: 0;
   }
 }
 @media (max-width: 1024px) {
   .slide9 p {
+    max-width: 100% !important;
     position: static;
     -webkit-transform: none !important;
             transform: none !important;
@@ -2810,15 +2815,18 @@ p {
   .slide9 .default-slide__info {
     -webkit-transform: none;
             transform: none;
-    left: 0;
-    bottom: 3%;
+    left: 13%;
+    bottom: 2%;
+    max-width: 540px;
   }
 }
 @media (max-width: 1239px) {
   .slide9 .default-slide__info {
+    max-width: 94%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     left: 50%;
+    bottom: 5%;
   }
 }
 .slide9 .default-slide__picture {
@@ -2837,7 +2845,7 @@ p {
 @media (min-width: 1024px) and (max-width: 1550px) {
   .slide9 .default-slide__picture picture,
   .slide9 .default-slide__picture img {
-    height: 60vh;
+    height: 70vh;
   }
 }
 @media (max-width: 1239px) {
@@ -5187,7 +5195,7 @@ footer {
     height: 100dvh;
   }
   .default-slide .swiper-button-next {
-    top: 87%;
+    top: 95dvh;
   }
 }
 .default-slide__box {
