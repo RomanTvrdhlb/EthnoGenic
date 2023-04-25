@@ -6,7 +6,7 @@
     &__text{
         color: rgba(var(--cl-a),1.0);
         font-family: var(--font-family);
-        font-size: 25px;
+        font-size: 23px;
         font-weight: 400;
         font-style: normal;
         letter-spacing: normal;
@@ -20,9 +20,14 @@
             font-family: var(--font-family2);
         }
 
+        @media (max-width: (1550px)) {
+            font-size: 20px;
+          }
+          
         @include small-tablet{
             font-size: 15px;
             grid-gap: clamp(20px, 2.632vw, 45px);
+            letter-spacing: normal;
             line-height: normal;
         }
     }
