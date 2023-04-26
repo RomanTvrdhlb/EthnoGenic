@@ -13,7 +13,7 @@
       justify-content: flex-end;
     }
 
-    @include fix-height{
+    @include fix-height {
       grid-gap: 50px;
       display: flex;
       align-items: center;
@@ -32,10 +32,9 @@
       top: 13%;
     }
 
-    @include fix-height{
-    position: static;
-    grid-gap: 30px;
-
+    @include fix-height {
+      position: static;
+      grid-gap: 30px;
     }
 
     @include notebook {
@@ -56,7 +55,7 @@
       grid-gap: 30px;
     }
 
-    @include ios{
+    @include ios {
       grid-gap: 10px;
     }
 
@@ -86,8 +85,7 @@
         display: flex;
         justify-content: end;
 
-
-        @include fix-height{
+        @include fix-height {
           width: 100%;
           height: auto;
         }
@@ -106,9 +104,9 @@
     }
 
     @include tablet {
-        display: flex;
-        justify-content: center;
-        height: 60%;
+      display: flex;
+      justify-content: center;
+      height: 60%;
     }
 
     @include small-tablet {
@@ -121,18 +119,11 @@
       }
     }
 
-    @include mobile{
-      img,picture{
-      width: 100%;
-      height: auto;
-    }
-
-      @include ios{
-        img,picture{
-        width: auto;
-        height: 40dvh;
+    @include mobile {
+      img,
+      picture {
+        height: 50vh;
       }
     }
-  }
   }
 }

@@ -158,11 +158,6 @@
 
       @include mobile{
         height: 50vh;
-        width: auto;
-    }
-
-    @include ios{
-      height: 35vh;
     }
     }
   }

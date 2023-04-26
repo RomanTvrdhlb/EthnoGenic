@@ -78,11 +78,7 @@
         }
 
         @include mobile{
-          height: 40vh;
-        }
-
-        @include ios{
-          height: 18vh;
+          height: 43vh;
         }
       }
   

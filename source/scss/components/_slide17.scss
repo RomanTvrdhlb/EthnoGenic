@@ -103,6 +103,10 @@
     @include tablet {
       max-width: 100%;
     }
+
+    @include mobile{
+      padding: 0;
+    }
   }
 
   .default-slide__picture {
@@ -125,10 +129,6 @@
 
       @include mobile {
         height: 50vh;
-      }
-
-      @include ios {
-        height: 30vh;
       }
     }
     @include tablet {

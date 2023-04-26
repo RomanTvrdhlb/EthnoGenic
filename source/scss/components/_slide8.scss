@@ -65,11 +65,11 @@
         width: calc(100% + 90px);
       }
 
-      @include ios{
-        margin: 0;
-        width: 100%;
-        height: 45vh;
-      }
+      // @include ios{
+      //   margin: 0;
+      //   width: 100%;
+      //   height: 45vh;
+      // }
     }
   }
 }

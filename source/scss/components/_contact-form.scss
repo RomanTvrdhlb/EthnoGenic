@@ -10,7 +10,7 @@
     }
 
     @include ios{
-        grid-gap: 10px;
+        grid-gap: 15px;
     }
     
     &__title{
@@ -65,10 +65,6 @@
             font-family: var(--font-family);
             font-size: 15px;
         }
-
-        @include ios{
-            min-height: 57px;
-          }
     }
 
     .just-validate-error-label {

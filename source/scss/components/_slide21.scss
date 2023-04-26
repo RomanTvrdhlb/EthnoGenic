@@ -37,8 +37,8 @@
         height: 60vh;
       }
 
-      @include ios{
-        height: 40vh;
+      @include mobile{
+        height: 43vh;
       }
     }
 

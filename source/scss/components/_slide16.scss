@@ -38,6 +38,10 @@
             grid-gap: 70px;
         }
 
+        @include mobile{
+            grid-gap: 40px;
+        }
+
         &--mode{
             grid-template-columns: 2.3fr 1fr;
 
@@ -118,12 +122,8 @@
             }
 
             @include mobile{
-                height: 40vh;
+                height: 47vh;
             }
-
-            @include ios{
-                height: 25vh;
-              }
         }
 
         @include tablet{

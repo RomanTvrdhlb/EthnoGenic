@@ -23,12 +23,12 @@
           max-width: 50vh;
         }
 
-        @include ios{
+        @include mobile{
           justify-content: center;
           picture,
           img {
             width: auto;
-            height: 40vh;
+            height: 53vh;
           }
         }
     }

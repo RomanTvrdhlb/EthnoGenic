@@ -33,6 +33,9 @@
             max-width: 920px;
         }
 
+        @include mobile{
+            grid-gap: 30px;
+        }
 
     }
 
@@ -58,8 +61,8 @@
                 width: calc(100% + 90px);
             }
 
-            @include ios{
-                height: 35vh;
+            @include mobile{
+                height: 50vh;
             }
         }
     }

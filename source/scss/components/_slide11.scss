@@ -90,6 +90,7 @@
 
       @include mobile{
         display: flex;
+        grid-gap: 20px;
       }
 
       @include fix-height{
@@ -119,11 +120,7 @@
           @include mobile {
             margin-left: -30px;
             margin-right: -60px;
-            width: calc(100% + 90px);
-          }
-
-          @include ios{
-            height: 25vh;
+            width: calc(95% + 90px);
           }
         }
       }
