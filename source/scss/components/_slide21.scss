@@ -20,9 +20,13 @@
     picture {
       width: auto;
       height: 70vh;
+
+      @include laptop{
+        height: 60vh;
+      }
+
       @include tablet {
         height: 45vh;
-        width: auto;
       }
 
       @include small-tablet {

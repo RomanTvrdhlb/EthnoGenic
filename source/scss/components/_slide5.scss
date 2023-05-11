@@ -8,6 +8,15 @@
         img,picture{
           width: auto;
           height: 75vh;
+
+          @include laptop{
+            height: 70vh;
+          }
+
+          @include mobile{
+            width: auto;
+            height: 53vh;
+          }
         }
 
         @include tablet {
@@ -16,12 +25,15 @@
 
         @include mobile{
           justify-content: center;
-          picture,
-          img {
-            width: auto;
-            height: 53vh;
-          }
         }
     }
 
+
+    p{
+
+      @include laptop{
+        max-width: 305px;
+        justify-self: center;
+      }
+    }
 }

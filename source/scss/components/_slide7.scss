@@ -1,9 +1,10 @@
 .slide7 {
   .default-slide__box {
     grid-gap: clamp(40px, 5.385vw, 70px);
+
     @include laptop {
       padding-top: 40px;
-      grid-template-columns: 60% auto;
+      grid-template-columns: 65% auto;
     }
   }
 
@@ -15,39 +16,35 @@
 
     img,picture{
       width: auto;
-      height: 75vh;
+      height: 72vh;
+
+      @include laptop{
+        height: 60vh;
+      }
+
+      @include tablet{
+        height: 50vh;
+      }
+
+      @include small-tablet{
+        height: 65vh;
+      }
+
+      @include mobile{
+        width: 95%;
+        height: auto;
+      }
     }
 
     @include laptop {
       justify-content: center;
-      picture,
-      img {
-        width: auto;
-        height: 80vh;
-      }
     }
-    @include tablet {
-      picture,
-      img {
-        height: 50vh;
-      }
-    }
-    @include small-tablet {
-      picture,
-      img {
-        height: 65vh;
-      }
-    }
+
     @include mobile {
       margin-left: -60px;
       margin-right: -60px;
       width: calc(100% + 120px);
       justify-content: end;
-      picture,
-      img {
-        width: 95%;
-        height: auto;
-      }
     }
 
     @include ios {

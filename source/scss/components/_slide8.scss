@@ -22,6 +22,10 @@
     grid-gap: 50px;
     max-width: 415px;
 
+    @include laptop{
+      max-width: 75%;
+    }
+
     @include ios{
       grid-gap: 0;
     }
@@ -35,6 +39,10 @@
     picture {
       height: 80vh;
       width: auto;
+
+      @include laptop{
+        height: 65vh;
+      }
 
       @include tablet {
         height: 55vh;

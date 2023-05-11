@@ -32,6 +32,8 @@
 
         @include laptop{
             padding: 0;
+            grid-gap: 40px;
+            grid-template-columns: 1.8fr 1fr;
         }
 
         @include tablet{
@@ -91,7 +93,7 @@
         justify-content: center;
 
         @include laptop{
-            max-width: 100%;
+            max-width: 95%;
         }
     }
 }

@@ -68,15 +68,18 @@
     display: flex;
     justify-content: center;
 
+    @include laptop{
+      align-self: center;
+      margin-bottom: -5%;
+    }
+
     picture,
     img {
       width: auto;
       height: 80vh;
 
-    
-
       @include laptop {
-        height: 55vh;
+        height: 70vh;
       }
 
       @include tablet {

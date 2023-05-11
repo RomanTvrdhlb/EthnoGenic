@@ -23,6 +23,10 @@
 
   p {
     max-width: 440px;
+
+    @include laptop{
+        max-width: 710px;
+    }
   }
 
   .default-slide__picture {
@@ -34,19 +38,13 @@
       width: auto;
       height: 70vh;
 
-      @include laptop {
-        height: auto;
-        width: 100%;
+      @include laptop{
+        height: 75vh;
       }
+    }
 
-      // @include small-tablet{
-      //     height: 50vh;
-      // }
-
-      // @include mobile{
-      //     height: auto;
-      //     width: 100%;
-      // }
+    @include laptop{
+        justify-content: center;
     }
   }
 }

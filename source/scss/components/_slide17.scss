@@ -79,6 +79,7 @@
 
     @include laptop {
       padding-top: 30px;
+      max-width: 70%;
     }
 
     @include tablet {

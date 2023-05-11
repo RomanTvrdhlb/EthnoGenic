@@ -1,6 +1,7 @@
 .slide6 {
   .default-slide__box {
     grid-gap: 40px;
+
     @include laptop {
       padding-top: 40px;
       display: flex;
@@ -17,36 +18,33 @@
     img,picture{
       width: auto;
       height: 60vh;
+
+      @include laptop{
+        width: auto;
+        height: 55vh;
+      }
+
+      @include tablet{
+        height: 50vh;
+      }
+
+      @include mobile{
+        width: 100%;
+        height: auto;
+      }
+
+      @include ios{
+        width: auto;
+        height: 40vh;
+      }
     }
  
     @include laptop {
       justify-content: center;
-      picture,
-      img {
-        width: auto;
-        height: 55vh;
-      }
     }
     @include tablet {
       justify-content: flex-start;
       margin-left: -60px;
-      img,picture{
-        height: 50vh;
-      }
-    }
-    @include mobile {
-      picture,
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
-    @include ios {
-      picture,
-      img {
-        width: auto;
-        height: 40vh;
-      }
     }
   }
 
@@ -55,8 +53,8 @@
     max-width: 550px;
 
     @include laptop {
-      max-width: 100%;
-      margin-top: -40px;
+      max-width: 80%;
+
     }
 
     @include tablet {

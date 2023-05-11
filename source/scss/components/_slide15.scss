@@ -2,11 +2,13 @@
   .default-slide__box {
     grid-template-columns: 100%;
     padding-top: 20px;
+
     @include laptop {
       display: flex;
       flex-direction: column;
       grid-gap: 20px;
       justify-content: center;
+      padding: 20px;
     }
 
     @include small-tablet {

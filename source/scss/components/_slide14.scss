@@ -5,6 +5,10 @@
     grid-gap: 20px;
     padding-top: 50px;
 
+    @include laptop{
+      padding: 40px;
+    }
+
   @include small-tablet{
       padding: 40px 60px;
   }
@@ -66,6 +70,10 @@
         @include laptop {
           padding-top: 7vh;
           justify-content: center;
+        }
+
+        @include laptop{
+          justify-self: start;
         }
 
         @include tablet {

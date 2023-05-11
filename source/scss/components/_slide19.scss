@@ -25,7 +25,9 @@
     .default-slide__info{
         max-width: 426px; 
 
-     
+        @include laptop{
+          max-width: 80%;
+        }
 
         @include tablet{
           display: none;

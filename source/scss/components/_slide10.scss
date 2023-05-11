@@ -19,7 +19,10 @@
         grid-gap: 45px;
         max-width: 540px;
 
-    
+        @include laptop{
+            max-width: 70%;
+        }
+
         @include mobile{
             grid-gap: 30px;
         }
