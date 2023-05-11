@@ -41,7 +41,7 @@
             
         }
 
-        @include ios{
+        @include mobile{
           height: fit-content;
         }
         img,
@@ -50,11 +50,7 @@
           width: auto;
 
           @include laptop {
-            height: 20vh;
-          }
-
-          @include tablet {
-            height: 15vh;
+            height: 30vh;
           }
 
           @include small-tablet{
@@ -141,11 +137,7 @@
     
 
       @include laptop {
-        height: 40vh;
-      }
-
-      @include tablet {
-        height: 35vh;
+        height: 50vh;
       }
 
       @include small-tablet {
@@ -153,7 +145,7 @@
       }
 
       @include mobile{
-        height: 28vh !important;
+        height: 35vh !important;
       }
 
     }

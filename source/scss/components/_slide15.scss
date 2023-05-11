@@ -58,13 +58,9 @@
         display: flex;
         justify-content: end;
 
-      
-
         img,
         picture {
           height: 60vh;
-
-          
 
           @include laptop {
             height: 40vh;
@@ -92,8 +88,6 @@
   p {
     max-width: 600px;
 
-   
-
     @include laptop {
       max-width: 55%;
     }
@@ -119,7 +113,7 @@
       }
 
       @include small-tablet {
-        height: 75vh;
+        height: 65vh;
       }
 
       @include mobile{

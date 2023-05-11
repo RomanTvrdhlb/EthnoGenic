@@ -40,6 +40,10 @@
       justify-content: center;
     }
 
+    @include tablet{
+      margin: 0;
+    }
+
     @include mobile {
       margin-left: -60px;
       margin-right: -60px;

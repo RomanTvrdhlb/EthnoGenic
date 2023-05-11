@@ -11,6 +11,7 @@
 
   @include small-tablet{
       padding: 40px 60px;
+      grid-gap: 40px;
   }
 
   @include mobile{
@@ -91,8 +92,9 @@
     @include small-tablet {
       display: flex;
       flex-direction: column;
-      grid-gap: 30px;
+      grid-gap: 60px;
       width: 100%;
+      height: fit-content;
     }
 
     @include ios{
@@ -117,6 +119,7 @@
       width: 100%;
       text-align: start;
       padding: 0;
+      height: fit-content;
     }
   }
 

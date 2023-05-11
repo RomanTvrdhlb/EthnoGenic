@@ -11,6 +11,9 @@
 
         @include small-tablet{
             justify-content: flex-end;
+        }
+
+        @include mobile{
             padding-top: 0;
         }
     }
@@ -23,7 +26,8 @@
             max-width: 70%;
         }
 
-        @include mobile{
+        @include tablet{
+            max-width: 100%;
             grid-gap: 30px;
         }
 
@@ -37,20 +41,23 @@
             height: 70vh;
             width: auto;
 
-        
-
             @include laptop{
                 height: 55vh;
             }
 
+            @include tablet{
+                height: 50vh;
+            }
+
             @include small-tablet{
-                margin-left: -30px;
-                margin-right: -60px;
-                width: calc(100% + 90px);
+               
             }
 
             @include mobile{
-                height: 50vh;
+                margin-left: -30px;
+                margin-right: -60px;
+                width: calc(100% + 90px);
+                height: 55vh;
             }
         }
     }

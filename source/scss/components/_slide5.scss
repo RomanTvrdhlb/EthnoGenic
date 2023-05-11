@@ -13,17 +13,17 @@
             height: 70vh;
           }
 
+          @include tablet{
+            height: 60vh;
+          }
+
           @include mobile{
             width: auto;
             height: 53vh;
           }
         }
 
-        @include tablet {
-          max-width: 50vh;
-        }
-
-        @include mobile{
+        @include tablet{
           justify-content: center;
         }
     }
@@ -34,6 +34,15 @@
       @include laptop{
         max-width: 305px;
         justify-self: center;
+      }
+
+      @include tablet{
+        max-width: 100%;
+        grid-gap: 40px;
+
+        br{
+          display: none;
+        }
       }
     }
 }

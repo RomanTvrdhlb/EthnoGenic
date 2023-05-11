@@ -50,7 +50,12 @@
 
     @include tablet {
       padding: 0;
+      padding-left: 10%;
       text-align: left !important;
+    }
+
+    @include small-tablet{
+      padding-left: 0;
     }
   }
 

@@ -20,6 +20,7 @@
       order: 2;
       padding: 0;
       width: 100%;
+      grid-gap: 40px;
     }
 
     @include mobile {
@@ -86,14 +87,17 @@
         height: 65vh;
       }
 
-      @include small-tablet {
-        margin-left: -20px;
-        margin-right: -60px;
-        width: calc(100% + 90px);
-      }
+      // @include small-tablet {
+      //   margin-left: -20px;
+      //   margin-right: -60px;
+      //   width: calc(100% + 90px);
+      // }
 
       @include mobile {
-        height: 52vh;
+        margin-left: -30px;
+        margin-right: -60px;
+        width: calc(100% + 90px);
+        height: 60vh;
       }
     }
   }

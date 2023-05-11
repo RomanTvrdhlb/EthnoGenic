@@ -22,10 +22,15 @@
     @include tablet {
       flex-direction: column;
       grid-gap: clamp(20px, 3.077vw, 40px);
+      align-items: flex-start;
     }
 
     p{
       max-width: 710px;
+
+      @include tablet{
+        max-width: 100%;
+      }
     }
 
     &--mode {
@@ -44,6 +49,7 @@
       @include tablet {
         padding: 0;
         flex-direction: row;
+        align-items: center;
       }
 
       .default-slide__picture {
@@ -116,10 +122,6 @@
       }
 
       @include tablet{
-        height: 20vh;
-      }
-
-      @include small-tablet{
         height: 30vh;
       }
 

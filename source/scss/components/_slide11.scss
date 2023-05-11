@@ -28,6 +28,7 @@
       padding: 0;
       flex-direction: row;
       align-items: center;
+      width: 100%;
     }
 
     @include mobile{
@@ -85,12 +86,15 @@
       }
 
       .default-slide__picture {
-        justify-content: flex-start;
+        justify-content: flex-end;
+
+        @include small-tablet{
+          justify-content: center;
+        }
         img,
         picture {
-
           @include small-tablet {
-            width: 100%;
+            width: auto;
             height: 40vh;
           }
 
@@ -104,13 +108,17 @@
 
       p{
         padding: 0;
+        margin-right: -10%;
+
+        @include tablet{
+        margin: 0;
+        }
       }
     }
   }
 
   p {
     max-width: 500px;
-    margin-right: -10%;
     padding-top: 45px;
   }
 
@@ -144,6 +152,10 @@
 
     @include laptop {
       justify-content: flex-end;
+    }
+
+    @include tablet{
+      justify-content: center;
     }
   }
 }

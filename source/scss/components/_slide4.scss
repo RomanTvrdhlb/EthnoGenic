@@ -6,16 +6,19 @@
       align-items: end;
     }
 
+    @include tablet{
+      justify-content: flex-end;
+    }
+
     @include small-tablet {
       flex-direction: column-reverse;
-      justify-content: flex-end;
     }
   }
 
   p {
     position: absolute;
     top: 10%;
-    left: 40px;
+    left: 30px;
     max-width: 680px;
     grid-gap: 40px;
 
@@ -59,40 +62,36 @@
     justify-content: flex-end;
 
     img,picture{
-      height: 85vh;
+      height: 70vh;
       width: auto;
 
-      @include laptop{
-        height: 70vh;
+      @include tablet{
+        height: 62vh;
+      }
+
+      @include small-tablet{
+        height: 60vh;
+      }
+
+      @include mobile{
+        height: 50vh;
       }
     }
  
     @include laptop {
       padding: 0 40px 40px 40px;
-      
     }
 
-    @include tablet {
-      display: flex;
-      justify-content: center;
-      height: 60%;
+    @include tablet{
+      padding-right: 0;
     }
 
+  
     @include small-tablet {
       padding: 0;
       height: fit-content;
-
-      img,
-      picture {
-        height: 60vh;
-      }
-    }
-
-    @include mobile {
-      img,
-      picture {
-        height: 50vh;
-      }
+      display: flex;
+      justify-content: center;
     }
   }
 }

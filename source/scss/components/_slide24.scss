@@ -10,11 +10,15 @@
         }
 
         @include tablet{
-            flex-direction: column-reverse;
-            justify-content: flex-end;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
         }
 
         @include small-tablet{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: flex-end;
             grid-gap: 80px;
         }
 
@@ -56,7 +60,7 @@
 
             @include tablet{
                 width: auto;
-                height: 45vh;
+                height: 60vh;
             }
         }
 

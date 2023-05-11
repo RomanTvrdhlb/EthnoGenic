@@ -37,6 +37,7 @@
         }
 
         @include tablet{
+            display: flex;
             flex-direction: column;
             height: fit-content;
         }
@@ -66,9 +67,6 @@
             width: auto;
             height: 60vh;
 
-         
-
-
             @include tablet{
                 height: 50vh;
             }
@@ -94,6 +92,10 @@
 
         @include laptop{
             max-width: 95%;
+        }
+
+        @include tablet{
+            max-width: 100%;
         }
     }
 }

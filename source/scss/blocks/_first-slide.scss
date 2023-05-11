@@ -7,14 +7,24 @@
         height: 100dvh;
     }
 
+    &__box{
+      height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+
     &__inner{
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        grid-gap: 6.692vw;
-        height: 100vh;
+        grid-gap: 100px;
+        height: fit-content;
+
+        @include laptop{
+          height: 100%;
+        }
         
 
           @include small-tablet{
@@ -25,7 +35,7 @@
 
           @include mobile{
             padding-top: 85px;
-            padding-bottom: 110px;
+            padding-bottom: 120px;
           }
 
           @include ios{
