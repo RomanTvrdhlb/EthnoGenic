@@ -6,9 +6,7 @@
         grid-gap: 20px;
         align-items: start;
 
-        @include fix-height{
-            padding-top: 20px;
-        }
+        
 
         @include laptop{
             align-items: center;
@@ -22,15 +20,11 @@
     .default-slide__inner{
         display: grid;
         grid-template-columns: 1fr 1.7fr;
+        grid-gap: 60px;
         align-items: center;
         height: fit-content;
 
-        @include fix-height{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: row;
-        }
+       
 
         @include tablet{
             display: flex;
@@ -45,28 +39,21 @@
         &--mode{
             grid-template-columns: 2.3fr 1fr;
 
-            @include fix-height{
-                display: grid;
-                grid-template-columns: 2.3fr 1fr;
-            }
+           
 
             .default-slide__info{
                 max-width: 440px;
                 justify-self: center;
 
-                @include fix-height{
-                    max-width: 350px;
-                }
             }
 
             .default-slide__picture{
                 margin-top: -10vh;
+              
                 img,picture{
-                    height: 50vh;
+                    height: 40vh;
 
-                    @include fix-height{
-                        height: 45vh;
-                    }
+       
 
                     @include laptop{
                         height: 35vh;
@@ -92,11 +79,9 @@
     }
 
     .default-slide__info{
-        max-width: 830px;
+        max-width: 680px;
 
-        @include fix-height{
-            max-width: 550px;
-        }
+    
 
         @include tablet{
             display: none;
@@ -104,15 +89,13 @@
     }
 
     .default-slide__picture{
-
+        display: flex;
+        justify-content: center;
         img,picture{
             width: auto;
-            height: 45vh;
+            height: 50vh;
 
-            @include fix-height{
-                height: 50vh;
-            }
-
+         
             @include laptop{
                 height: 40vh;
             }

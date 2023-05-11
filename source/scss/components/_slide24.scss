@@ -1,12 +1,8 @@
 .slide24{
 
     .default-slide__box{
-        grid-template-columns: 1fr 1.5fr;
-        grid-gap: clamp(50px, 8.07vw, 138px);
-
-        @include notebook{
-            grid-template-columns: repeat(2, 1fr);
-        }
+        grid-template-columns: 1fr 1.2fr;
+        grid-gap: clamp(50px, 6.923vw, 90px);
 
         @include laptop{
             grid-gap: 35px;
@@ -47,10 +43,11 @@
     }
 
     .default-slide__picture{
-
+        display: flex;
+        justify-content: center;
         img,picture{
-                width: auto;
-                height: 90vh;
+            width: auto;
+            height: 75vh;
 
 
             @include laptop{

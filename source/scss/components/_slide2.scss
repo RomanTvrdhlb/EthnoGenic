@@ -1,7 +1,6 @@
 .slide2 {
   .default-slide__box {
     grid-template-columns: 1fr 1.5fr;
-    grid-gap: clamp(60px, 8.187vw, 140px);
     position: relative;
     
 
@@ -14,22 +13,11 @@
     @include tablet {
       padding-top: 60px;
     }
-
-    @include fix-height{
-      grid-gap: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
   }
 
   p {
-    align-items: center;
-
-    @include notebook {
-      align-items: end;
-    }
-
+    align-items: end;
+    font-weight: 500;
     @include laptop {
       position: absolute;
       top: 3%;
@@ -46,18 +34,11 @@
   }
 
   .default-slide__picture {
-    
-    @include notebook {
-        picture,
-        img {
-          width: auto;
-          height: 90vh;
-        }
-      }
-  
-      @include laptop {
-        width: 90%;
-      }
+
+    img,picture{
+      width: auto;
+      height: 80vh;
+    }
 
       @include tablet {
         width: 100%;

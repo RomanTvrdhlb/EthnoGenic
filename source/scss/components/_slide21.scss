@@ -1,11 +1,12 @@
 .slide21 {
 
+  .default-slide__box{
+    grid-template-columns: 1.2fr 1fr;
+    grid-gap: clamp(60px, 7.692vw, 100px);
+  }
     .info-list{
-
-      @include fix-height{
-        grid-gap: 25px;
-      }
-
+      max-width: 500px;
+   
       @include tablet{
         grid-gap: 25px;
       }
@@ -17,17 +18,8 @@
 
     img,
     picture {
-
-      @include fix-height{
-        width: auto;
-        height: 80vh !important;
-      }
-
-      @include notebook {
-        width: auto;
-        height: 60vh;
-      }
-
+      width: auto;
+      height: 70vh;
       @include tablet {
         height: 45vh;
         width: auto;

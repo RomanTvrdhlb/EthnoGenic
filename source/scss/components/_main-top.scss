@@ -5,9 +5,9 @@
   max-width: 500px;
   z-index: 2;
 
-  --phrase-gap: 24px;
+  --phrase-gap: 18px;
     @include small-tablet{
-        --phrase-gap: 12px;
+        --phrase-gap: 9px;
     }
 
   &__inner {
@@ -19,11 +19,11 @@
   &__title {
     color: rgba(var(--cl-a), 1);
     font-family: var(--font-family);
-    font-size: 53px;
+    font-size: 39px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
-    line-height: 45px;
+    letter-spacing: -4.16px;
+    line-height: 33px;
     grid-column: span 4;
 
     @include small-tablet {
@@ -34,12 +34,13 @@
   &__phrase {
     color: rgba(var(--cl-a), 1);
     font-family: var(--font-family);
-    font-size: 23px;
+    font-size: 17px;
     font-weight: 400;
     font-style: normal;
     letter-spacing: normal;
-    line-height: 100%;
+    line-height: 33px;
     position: relative;
+    letter-spacing: -1.81px;
 
     @include small-tablet {
       font-size: 12px;

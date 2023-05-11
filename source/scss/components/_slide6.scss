@@ -1,5 +1,6 @@
 .slide6 {
   .default-slide__box {
+    grid-gap: 40px;
     @include laptop {
       padding-top: 40px;
       display: flex;
@@ -13,13 +14,11 @@
     align-items: center;
     justify-content: end;
 
-    @include notebook {
-      picture,
-      img {
-        width: auto;
-        height: 90vh;
-      }
+    img,picture{
+      width: auto;
+      height: 60vh;
     }
+ 
     @include laptop {
       justify-content: center;
       picture,
@@ -52,11 +51,8 @@
   }
 
   .default-slide__info {
-    grid-gap: clamp(40px, 3.509vw, 60px);
-
-    @include fix-height{
-    grid-gap: 30px;
-    }
+    grid-gap: clamp(40px, 3.846vw, 50px);
+    max-width: 550px;
 
     @include laptop {
       max-width: 100%;

@@ -2,10 +2,8 @@
   .default-slide__box {
     grid-template-columns: 100%;
     justify-items: center;
-
-    @include notebook {
-      padding: 40px;
-    }
+    align-items: end;
+    padding-bottom: 50px;
   }
 
   .default-slide__inner {
@@ -30,20 +28,11 @@
   }
 
   p {
-    padding-bottom: 15vh;
-    max-width: 710px;
+    max-width: 510px;
     position: absolute;
-    top: 5%;
+    top: 6%;
     left: 50%;
-    transform: translateX(-28%);
-
-    @include fix-height{
-      top: 2%;
-    }
-
-    @include notebook {
-      transform: translateX(-13%);
-    }
+    transform: translateX(-30%);
 
     @include laptop {
       max-width: 94%;
@@ -63,20 +52,9 @@
 
   .default-slide__info {
     top: initial;
-    bottom: 0;
+    bottom: 13%;
     left: 10%;
-    transform: translateX(-15%);
-
-    @include fix-height{
-      left: 5% !important;
-    }
-
-    @include notebook {
-      transform: none;
-      left: 13%;
-      bottom: 2%;
-      max-width: 540px;
-    }
+    transform: translateX(-10%);
 
     @include laptop {
       max-width: 94%;
@@ -95,9 +73,7 @@
       width: auto;
       height: 80vh;
 
-      @include notebook {
-        height: 70vh;
-      }
+    
 
       @include laptop {
         height: 55vh;

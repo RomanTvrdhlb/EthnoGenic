@@ -45,7 +45,7 @@
     .default-slide__about{
         width: 100%;
         max-width: 100%;
-        padding-left: 20%;
+        padding-left: 17%;
 
         @include laptop{
             padding-left: 7%;
@@ -65,7 +65,7 @@
         align-items: center;
         img,picture{
             width: auto;
-            height: 85vh;
+            height: 80vh;
 
             @include laptop{
                 height: 70vh;

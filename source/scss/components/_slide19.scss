@@ -1,13 +1,10 @@
 .slide19 {
 
     .default-slide__box{
-        grid-template-columns: 1fr 1.6fr;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 40px;
+      justify-items: center;
 
-        @include fix-height{
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
 
         @include laptop{
             display: flex; 
@@ -26,11 +23,9 @@
     }
 
     .default-slide__info{
-        max-width: 960px; 
+        max-width: 426px; 
 
-        @include fix-height{
-          max-width: 400px;
-        }
+     
 
         @include tablet{
           display: none;
@@ -46,7 +41,7 @@
     .default-slide__picture {
       display: flex;
       align-items: center;
-      justify-content: end;
+      justify-content: center;
 
       @include laptop{
         justify-content: center;
@@ -54,15 +49,10 @@
   
       img,
       picture {
+        width:auto;
+        height: 70vh;
 
-        @include fix-height{
-          height: 90vh !important;
-        }
-
-        @include notebook {
-          width: auto;
-          height: 80vh;
-        }
+     
   
         @include laptop {
           height: 61vh;

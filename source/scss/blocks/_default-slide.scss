@@ -16,7 +16,7 @@
     align-items: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: clamp(40px, 5.556vw, 95px);
+    grid-gap: clamp(60px, 6.538vw, 85px);
     position: relative;
 
     @include laptop {
@@ -36,7 +36,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    grid-gap: clamp(50px, 6.433vw, 110px) 30px;
+    grid-gap: clamp(50px, 8.462vw, 110px) 30px;
   }
 
   &__picture {
@@ -47,14 +47,10 @@
       width: 100%;
       height: auto;
     }
-
-    @include fix-height{
-      width: auto;
-    }
   }
 
   &__info {
-    max-width: 680px;
+    max-width: 580px;
 
     @include tablet {
       max-width: 100%;

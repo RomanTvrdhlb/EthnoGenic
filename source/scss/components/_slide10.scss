@@ -1,13 +1,7 @@
 .slide10{
     .default-slide__box{
-        grid-gap: clamp(40px, 3.509vw, 60px);
+        grid-gap: clamp(40px, 3.846vw, 50px);
         grid-template-columns: 1fr 1.3fr;
-
-        @include fix-height{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
 
         @include laptop{
             display: flex;
@@ -22,17 +16,10 @@
     }
 
     p{
-        grid-gap: clamp(40px, 3.509vw, 60px);
-        max-width: 730px;
+        grid-gap: 45px;
+        max-width: 540px;
 
-        @include fix-height{
-            max-width: 480px;
-        }
-
-        @include laptop{
-            max-width: 920px;
-        }
-
+    
         @include mobile{
             grid-gap: 30px;
         }
@@ -47,9 +34,7 @@
             height: 70vh;
             width: auto;
 
-            @include fix-height{
-                height: 90vh;
-            }
+        
 
             @include laptop{
                 height: 55vh;

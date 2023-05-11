@@ -1,10 +1,8 @@
 .slide4 {
   .default-slide__box {
-    grid-template-columns: 60%;
-    justify-content: end;
-
+    grid-template-columns: 100%;
+ 
     @include laptop {
-      grid-template-columns: 100%;
       align-items: end;
     }
 
@@ -12,34 +10,14 @@
       flex-direction: column-reverse;
       justify-content: flex-end;
     }
-
-    @include fix-height {
-      grid-gap: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
   }
 
   p {
     position: absolute;
-    top: 10%;
+    top: 14%;
     left: 0;
-    max-width: 850px;
-    grid-gap: 60px;
-
-    @media (min-width: (1900px)) {
-      top: 13%;
-    }
-
-    @include fix-height {
-      position: static;
-      grid-gap: 30px;
-    }
-
-    @include notebook {
-      max-width: 700px;
-    }
+    max-width: 680px;
+    grid-gap: 40px;
 
     @include laptop {
       max-width: 920px;
@@ -75,23 +53,16 @@
   }
 
   .default-slide__picture {
-    @include notebook {
-      display: flex;
-      justify-content: end;
 
-      picture,
-      img {
-        width: 85%;
-        display: flex;
-        justify-content: end;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 
-        @include fix-height {
-          width: 100%;
-          height: auto;
-        }
-      }
+    img,picture{
+      height: 85vh;
+      width: auto;
     }
-
+ 
     @include laptop {
       height: 70%;
       padding: 0 40px 40px 40px;

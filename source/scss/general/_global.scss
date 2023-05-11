@@ -175,9 +175,6 @@ input[type="number"] {
     padding: 0 calc(var(--container-offset) * 2);
   }
 
-  @include fix-height{
-    width: 95%;
-  }
 }
 
 .panel,

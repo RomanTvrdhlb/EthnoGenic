@@ -1,16 +1,16 @@
 .info-list{
     display: flex;
     flex-direction: column;
-    grid-gap: clamp(25px, 4.386vw, 75px);
+    grid-gap: clamp(25px, 3.846vw, 50px);
 
     &__text{
         color: rgba(var(--cl-a),1.0);
         font-family: var(--font-family);
-        font-size: 23px;
+        font-size: 21px;
         font-weight: 400;
         font-style: normal;
         letter-spacing: normal;
-        line-height: 180%;
+        line-height: 140%;
         text-align: left;  
         letter-spacing: -2px;
 
@@ -19,10 +19,6 @@
             font-style: italic;
             font-family: var(--font-family2);
         }
-
-        @media (max-width: (1550px)) {
-            font-size: 20px;
-          }
           
         @include small-tablet{
             font-size: 15px;

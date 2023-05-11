@@ -2,11 +2,9 @@
     .default-slide__box{
         display: flex;
         flex-direction: column;
-
-        @include fix-height{
-            grid-gap: 20px;
-        }
-
+        padding-top: 40px;
+        grid-gap: 60px;
+      
         @include laptop{
             justify-content: center;
         }
@@ -27,16 +25,10 @@
     .default-slide__inner{
         width: 100%;
         height: fit-content;
-        padding-top: 40px;
-        display: flex;
-        flex-direction: row;
         align-items: center;
-
-        @include fix-height{
-            padding-top: 20px;
-            justify-content: center;
-            grid-gap: 80px;
-        }
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        grid-gap: clamp(80px, 9.231vw, 120px);
 
         @include laptop{
             padding: 0;
@@ -58,14 +50,7 @@
     }
 
     p{
-
-        @include fix-height{
-            max-width: 500px;
-        }
-
-        @include laptop{
-            max-width: 450px;
-        }
+        max-width: 560px;
 
         @include tablet{
             max-width: 100%;
@@ -73,18 +58,14 @@
       
     }
     .default-slide__picture{
-
+        display: flex;
+        justify-content: center;
         img,picture{
             width: auto;
-            height: 65vh;
+            height: 60vh;
 
-            @include fix-height{
-                height: 75vh !important;
-            }
+         
 
-            @include notebook{
-                height: 60vh;
-            }
 
             @include tablet{
                 height: 50vh;
@@ -105,7 +86,8 @@
         }
     }
     .default-slide__info{
-        max-width: 850px;
+        max-width: 700px;
+        padding-top: 40px;
         justify-content: center;
 
         @include laptop{

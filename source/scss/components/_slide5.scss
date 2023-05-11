@@ -1,24 +1,15 @@
 .slide5{
 
-
-  p{
-    @include fix-height{
-      grid-gap: 50px;
-    }
-  }
-
     .default-slide__picture{
         display: flex;
         align-items: center;
         justify-content: end;
-  
-        @include notebook {
-          picture,
-          img {
-            width: auto;
-            height: 90vh;
-          }
+
+        img,picture{
+          width: auto;
+          height: 75vh;
         }
+
         @include tablet {
           max-width: 50vh;
         }
@@ -32,5 +23,5 @@
           }
         }
     }
-    
+
 }

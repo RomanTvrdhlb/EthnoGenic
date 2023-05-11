@@ -5,49 +5,29 @@
   }
     .default-slide__box{
         grid-template-columns: 1fr 1.4fr;
+      align-items: center;
+      justify-items: center;
 
-        @include fix-height{
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-
-        @include laptop{
-           grid-template-columns: 1fr 1.3fr;
-            align-items: center;
-        }
     }
 
     .default-slide__info{
-        max-width: 600px;
+        max-width: 460px;
 
-        @include fix-height{
-          max-width: 450px;
-        }
+      
     }
 
     .default-slide__picture {
       display: flex;
       align-items: center;
-      justify-content: end;
-
-      @include laptop{
-        justify-content: center;
-        margin-bottom: -6vh;
-      }
+      justify-content: center;
+        margin-bottom: -6%;
+      
   
       img,
       picture {
-
-        @include fix-height{
-          height: 90vh !important;
-          width: auto;
-        }
-        
-        @include notebook {
-          width: auto;
-          height: 80vh;
-        }
+        width: auto;
+        height: 70vh;
+      
   
         @include laptop {
           height: 61vh;

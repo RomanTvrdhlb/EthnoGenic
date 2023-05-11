@@ -2,16 +2,8 @@
   .default-slide__box {
     display: flex;
     flex-direction: column;
-    padding-top: clamp(20px, 2.339vw, 40px);
-    grid-gap: clamp(40px, 4.386vw, 75px);
-
-    @include notebook {
-      grid-gap: 20px;
-    }
-
-    @include laptop {
-      grid-gap: 40px;
-    }
+    padding-top: clamp(20px, 2.308vw, 30px);
+    grid-gap: 40px;
 
     @include ios{
         grid-gap: 20px;
@@ -21,26 +13,27 @@
   .default-slide__inner {
     flex-direction: row;
     align-items: center;
+    grid-gap: clamp(40px, 5.385vw, 70px);
     width: 100%;
     height: fit-content;
 
-    @include notebook {
-      align-items: flex-start;
-    }
+  
 
     @include tablet {
       flex-direction: column;
-      grid-gap: clamp(20px, 2.339vw, 40px);
+      grid-gap: clamp(20px, 3.077vw, 40px);
+    }
+
+    p{
+      max-width: 710px;
     }
 
     &--mode {
-      grid-gap: clamp(30px, 5.848vw, 100px);
+      grid-gap: clamp(30px, 9.231vw, 120px);
       justify-content: end;
-      margin-top: -110px;
+      margin-top: -60px;
 
-      @include notebook {
-        align-items: center;
-      }
+      
 
       @include laptop {
         margin: 0;
@@ -60,9 +53,7 @@
           width: auto;
           height: 40vh;
 
-          @include notebook {
-            height: 45vh;
-          }
+        
 
           @include laptop {
             height: 30vh;
@@ -88,20 +79,15 @@
       }
 
       .default-slide__info {
-        max-width: 861px;
-        grid-gap: 40px;
+        max-width: 685px;
+        grid-gap: 30px;
 
-        @include notebook {
-          max-width: 45%;
-        }
 
         @include laptop {
           max-width: 64%;
         }
         span {
-          @include notebook {
-            display: none;
-          }
+         
           @include laptop {
             display: flex;
           }
@@ -121,23 +107,14 @@
     }
   }
 
-  p{
-    @include fix-height{
-      max-width: 750px;
-    }
-  }
-
   .default-slide__picture {
     position: relative;
+    width: fit-content;
 
     img,
     picture {
       width: auto;
-      height: 35vh;
-
-      @include fix-height{
-        height: 39vh;
-      }
+      height: 32vh;
 
       @include laptop {
         height: 25vh;

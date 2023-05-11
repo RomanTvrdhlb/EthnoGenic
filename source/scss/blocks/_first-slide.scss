@@ -13,15 +13,9 @@
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        grid-gap: 4.979vw;
+        grid-gap: 6.692vw;
         height: 100vh;
         
-
-        @media (min-width: (1900px)) {
-            margin-left: -2.5%; 
-          }
-
-          
 
           @include small-tablet{
             justify-content: space-between;
