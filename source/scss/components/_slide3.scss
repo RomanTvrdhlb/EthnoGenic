@@ -68,12 +68,6 @@
     left: 50%;
     transform: translateX(-26%);
 
-
-    // @include notebook {
-    //   width: 100%;
-    //   max-width: 650px;
-    // }
-
     @include laptop {
       position: static;
       text-align: center;
@@ -102,11 +96,7 @@
     picture,
     img {
       width: auto;
-      height: 85vh;
-
-      @include laptop {
-        height: 65vh;
-      }
+      height: 65vh;
 
       @include tablet {
         height: 50vh;
@@ -124,7 +114,8 @@
       }
 
       @include ios{
-        height: 55vh;
+        height: 60dvh;
+        width: auto;
       }
     }
   }

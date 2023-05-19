@@ -1,6 +1,8 @@
 .main-section {
     position: relative;
-  
- 
+
+    @include mobile {
+        height: 100dvh;
+      }
 }
 

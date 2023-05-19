@@ -28,7 +28,6 @@
           max-height: 100%;
         }
         
-
           @include small-tablet{
             justify-content: space-between;
             padding-top: 135px;
@@ -36,26 +35,13 @@
           }
 
           @include mobile{
-            padding-top: 85px;
-            padding-bottom: 120px;
+            padding-top: 9dvh;
+            padding-bottom: 20.5dvh;
           }
-
-          @include ios{
-            padding-top: 41px;
-            padding-bottom: 41%;
-          }
-
-
     }
     .main-title{
         @include mobile{
             text-align: right;
         }
     }
-
-    // .main-top{
-    //     @include mobile{
-    //         margin-left: -15px;
-    //     }
-    // }
 }

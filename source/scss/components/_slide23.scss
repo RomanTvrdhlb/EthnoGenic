@@ -5,8 +5,13 @@
     padding-top: clamp(20px, 2.308vw, 30px);
     grid-gap: 40px;
 
-    @include ios{
-        grid-gap: 20px;
+    @include mobile {
+      justify-content: center;
+      padding: 0;
+    }
+
+    @include ios {
+      grid-gap: 20px;
     }
   }
 
@@ -17,18 +22,16 @@
     width: 100%;
     height: fit-content;
 
-  
-
     @include tablet {
       flex-direction: column;
       grid-gap: clamp(20px, 3.077vw, 40px);
       align-items: flex-start;
     }
 
-    p{
+    p {
       max-width: 710px;
 
-      @include tablet{
+      @include tablet {
         max-width: 100%;
       }
     }
@@ -37,8 +40,6 @@
       grid-gap: clamp(30px, 9.231vw, 120px);
       justify-content: end;
       margin-top: -60px;
-
-      
 
       @include laptop {
         margin: 0;
@@ -59,20 +60,15 @@
           width: auto;
           height: 40vh;
 
-        
           @include tablet {
             height: 25vh;
           }
 
-          @include ios{
-            height: 25vh;
+          @include ios {
+            height: 25dvh;
             display: flex;
           }
         }
-
-        // @include laptop {
-        //   margin-top: -20vh;
-        // }
 
         @include tablet {
           margin: 0;
@@ -83,12 +79,10 @@
         max-width: 685px;
         grid-gap: 30px;
 
-
         @include laptop {
           max-width: 64%;
         }
         span {
-         
           @include laptop {
             display: flex;
           }
@@ -121,17 +115,13 @@
         height: 25vh;
       }
 
-      @include tablet{
+      @include tablet {
         height: 30vh;
       }
 
-      @include mobile{
-        height: 22vh;
+      @include mobile {
+        height: 22dvh;
       }
-
-      // @include ios{
-      //   display: none;
-      // }
     }
   }
 

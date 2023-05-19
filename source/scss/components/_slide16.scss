@@ -1,117 +1,106 @@
-.slide16{
+.slide16 {
+  .default-slide__box {
+    grid-template-columns: 100%;
+    padding-top: 80px;
+    grid-gap: 20px;
+    align-items: start;
 
-    .default-slide__box{
-        grid-template-columns: 100%;
-        padding-top: 80px;
-        grid-gap: 20px;
-        align-items: start;
-
-        
-
-        @include laptop{
-            align-items: center;
-        }
-
-        @include mobile{
-            padding-top: 40px;
-        }
+    @include laptop {
+      align-items: center;
     }
 
-    .default-slide__inner{
-        display: grid;
-        grid-template-columns: 1fr 1.7fr;
-        grid-gap: 60px;
-        align-items: center;
-        height: fit-content;
+    @include mobile {
+      justify-content: center;
+      padding: 0;
+    }
+  }
 
-       
+  .default-slide__inner {
+    display: grid;
+    grid-template-columns: 1fr 1.7fr;
+    grid-gap: 60px;
+    align-items: center;
+    height: fit-content;
 
-        @include tablet{
-            display: flex;
-            flex-direction: column;
-            grid-gap: 70px;
-        }
-
-        @include mobile{
-            grid-gap: 40px;
-        }
-
-        &--mode{
-            grid-template-columns: 2.3fr 1fr;
-
-           
-
-            .default-slide__info{
-                max-width: 440px;
-                justify-self: center;
-
-            }
-
-            .default-slide__picture{
-                margin-top: -10vh;
-              
-                img,picture{
-                    height: 40vh;
-
-       
-
-                    @include laptop{
-                        height: 35vh;
-                    }
-                }
-                
-            }
-
-            @include laptop{
-                margin-top: -15vh;
-            }
-
-            @include tablet{
-                display: none;
-            }
-        }
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      grid-gap: 70px;
     }
 
-    .default-slide__about{
-        @include for-tablet{
-            display: none;
-        }
+    @include mobile {
+      grid-gap: 40px;
     }
 
-    .default-slide__info{
-        max-width: 680px;
+    &--mode {
+      grid-template-columns: 2.3fr 1fr;
 
-        @include tablet{
-            display: none;
+      .default-slide__info {
+        max-width: 440px;
+        justify-self: center;
+      }
+
+      .default-slide__picture {
+        margin-top: -10vh;
+
+        img,
+        picture {
+          height: 40vh;
+
+          @include laptop {
+            height: 35vh;
+          }
         }
+      }
+
+      @include laptop {
+        margin-top: -15vh;
+      }
+
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+
+  .default-slide__about {
+    @include for-tablet {
+      display: none;
+    }
+  }
+
+  .default-slide__info {
+    max-width: 680px;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  .default-slide__picture {
+    display: flex;
+    justify-content: center;
+    img,
+    picture {
+      width: auto;
+      height: 50vh;
+
+      @include laptop {
+        height: 40vh;
+      }
+
+      @include small-tablet {
+        height: 55vh;
+      }
+
+      @include mobile {
+        height: 47dvh;
+      }
     }
 
-    .default-slide__picture{
-        display: flex;
-        justify-content: center;
-        img,picture{
-            width: auto;
-            height: 50vh;
-
-         
-            @include laptop{
-                height: 40vh;
-            }
-
-            @include small-tablet{
-                height: 55vh;
-            }
-
-            @include mobile{
-                height: 47vh;
-            }
-        }
-
-        @include tablet{
-            display: flex;
-            justify-content: center;
-        }
+    @include tablet {
+      display: flex;
+      justify-content: center;
     }
-
-
+  }
 }

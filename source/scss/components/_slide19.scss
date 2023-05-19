@@ -1,82 +1,77 @@
 .slide19 {
+  .default-slide__box {
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 40px;
+    justify-items: center;
 
-    .default-slide__box{
-        grid-template-columns: 1fr 2fr;
-        grid-gap: 40px;
-      justify-items: center;
-
-
-        @include laptop{
-            display: flex; 
-            flex-direction: column-reverse;
-            justify-content: center;
-        }
-
-        @include mobile{
-          justify-content: flex-end;
-        }
-
-        @include ios{
-          padding-top: 20px;
-          grid-gap: 20px;
-        }
-    }
-
-    .default-slide__info{
-        max-width: 426px; 
-
-        @include laptop{
-          max-width: 80%;
-        }
-
-        @include tablet{
-          display: none;
-        }
-    }
-
-    .default-slide__about{
-      @include for-tablet{
-        display: none;
-      }
-    }
-
-    .default-slide__picture {
+    @include laptop {
       display: flex;
-      align-items: center;
+      flex-direction: column-reverse;
       justify-content: center;
+    }
 
-      @include laptop{
-        justify-content: center;
-      }
-  
-      img,
-      picture {
-        width:auto;
-        height: 70vh;
+    @include mobile {
+      justify-content: center;
+      padding: 0;
+    }
 
-     
-  
-        @include laptop {
-          height: 61vh;
-          width: auto;
-        }
-  
-        @include tablet {
-          height: 35vh;
-        }
-
-        @include small-tablet{
-          height: 50vh;
-        }
-
-        @include mobile{
-          height: 43vh;
-        }
-      }
-  
-      @include tablet {
-        justify-content: center;
-      }
+    @include ios {
+      grid-gap: 20px;
     }
   }
-  
+
+  .default-slide__info {
+    max-width: 426px;
+
+    @include laptop {
+      max-width: 80%;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  .default-slide__about {
+    @include for-tablet {
+      display: none;
+    }
+  }
+
+  .default-slide__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include laptop {
+      justify-content: center;
+    }
+
+    img,
+    picture {
+      width: auto;
+      height: 70vh;
+
+      @include laptop {
+        height: 61vh;
+        width: auto;
+      }
+
+      @include tablet {
+        height: 35vh;
+      }
+
+      @include small-tablet {
+        height: 50vh;
+      }
+
+      @include mobile {
+        height: 43dvh;
+      }
+    }
+
+    @include tablet {
+      justify-content: center;
+    }
+  }
+}

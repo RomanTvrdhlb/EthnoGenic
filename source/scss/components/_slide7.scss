@@ -6,6 +6,11 @@
       padding-top: 40px;
       grid-template-columns: 65% auto;
     }
+
+    @include mobile {
+      justify-content: center;
+      padding: 0;
+    }
   }
 
   .default-slide__picture {
@@ -33,6 +38,10 @@
       @include mobile{
         width: 95%;
         height: auto;
+      }
+
+      @include ios{
+        width: 90%;
       }
     }
 

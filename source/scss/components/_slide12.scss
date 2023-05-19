@@ -9,11 +9,11 @@
       grid-gap: 50px;
     }
 
-    @include small-tablet{
-        padding:20px 0;
+    @include small-tablet {
+      padding: 20px 0;
     }
 
-    @include ios{
+    @include ios {
       grid-gap: 40px;
     }
   }
@@ -31,17 +31,13 @@
       width: 100%;
 
       .default-slide__picture {
-       
-
-
-        @include small-tablet{
-            display: flex;
-            height: 100%;
-            align-items: flex-end;
-            
+        @include small-tablet {
+          display: flex;
+          height: 100%;
+          align-items: flex-end;
         }
 
-        @include mobile{
+        @include mobile {
           height: fit-content;
         }
         img,
@@ -53,7 +49,7 @@
             height: 30vh;
           }
 
-          @include small-tablet{
+          @include small-tablet {
             height: 40vh;
           }
         }
@@ -61,7 +57,6 @@
 
       p {
         max-width: 550px;
-     
 
         @include laptop {
           padding-top: 13vh;
@@ -72,26 +67,25 @@
           padding-top: 0;
         }
 
-        @include small-tablet{
-            height: fit-content;
+        @include small-tablet {
+          height: fit-content;
         }
       }
-      
-      
-      @include mobile{
+
+      @include mobile {
         height: 100% !important;
       }
     }
 
-    @include small-tablet{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        grid-gap: 20px;
+    @include small-tablet {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      grid-gap: 20px;
     }
 
-    @include mobile{
+    @include mobile {
       height: fit-content;
     }
   }
@@ -99,8 +93,6 @@
   p {
     height: 100%;
     justify-content: center;
-
-    
 
     @include laptop {
       justify-content: flex-end;
@@ -111,19 +103,18 @@
       padding-bottom: 5vh;
     }
 
-    @include small-tablet{
-        padding: 0;
-        align-items: center;
+    @include small-tablet {
+      padding: 0;
+      align-items: center;
     }
 
-    @include mobile{
+    @include mobile {
       height: fit-content;
     }
   }
 
-  .default-slide__about{
-
-    @include for-small-tablet{
+  .default-slide__about {
+    @include for-small-tablet {
       display: none;
     }
   }
@@ -134,8 +125,6 @@
       height: 60vh;
       width: auto;
 
-    
-
       @include laptop {
         height: 50vh;
       }
@@ -144,13 +133,16 @@
         height: 40vh;
       }
 
-      @include mobile{
-        height: 31vh !important;
+      @include mobile {
+        height: 32dvh !important;
       }
 
+      @include ios{
+        height: 30dvh !important;
+      }
     }
 
-    @include small-tablet{
+    @include small-tablet {
       display: flex;
       justify-content: center;
     }

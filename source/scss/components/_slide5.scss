@@ -1,5 +1,12 @@
 .slide5{
 
+    .default-slide__box{
+      @include mobile {
+        justify-content: center;
+        padding: 0;
+      }
+    }
+
     .default-slide__picture{
         display: flex;
         align-items: center;
@@ -7,11 +14,7 @@
 
         img,picture{
           width: auto;
-          height: 75vh;
-
-          @include laptop{
-            height: 70vh;
-          }
+          height: 63vh;
 
           @include tablet{
             height: 60vh;
@@ -21,6 +24,10 @@
             width: auto;
             height: 53vh;
           }
+
+          @include ios {
+            height: 50dvh;
+          }
         }
 
         @include tablet{
@@ -28,9 +35,7 @@
         }
     }
 
-
     p{
-
       @include laptop{
         max-width: 305px;
         justify-self: center;

@@ -19,6 +19,10 @@
     top: 40px;
   }
 
+  @include mobile{
+    top: 3dvh;
+  }
+
   &.active {
     img {
       display: none;

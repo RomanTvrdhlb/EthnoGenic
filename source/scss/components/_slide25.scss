@@ -1,83 +1,83 @@
-.slide25{
+.slide25 {
+  .default-slide__box {
+    grid-template-columns: 100%;
 
-    .default-slide__box{
-        grid-template-columns: 100%;
-
-        @include small-tablet{
-            justify-content: center;
-            padding-top: 0;
-        }
-
-        @include ios{
-            margin-top: -10%;
-        }
-
+    @include small-tablet {
+      justify-content: center;
+      padding-top: 0;
     }
 
-    .default-slide__inner{
-        justify-content: space-around;
+    @include mobile {
+      justify-content: center;
+      padding: 0;
+    }
+  }
 
-        @include tablet{
-            order: 2;
-            grid-gap: 40px;
-            justify-content: center;
-            height: fit-content;
-        }
+  .default-slide__inner {
+    justify-content: space-around;
+
+    @include tablet {
+      order: 2;
+      grid-gap: 40px;
+      justify-content: center;
+      height: fit-content;
+    }
+  }
+
+  .default-slide__info {
+    width: 100%;
+    max-width: 100%;
+    align-items: flex-end;
+    padding-right: 15%;
+
+    @include laptop {
+      padding-right: 3%;
     }
 
-    .default-slide__info{
-        width: 100%;
-        max-width: 100%;
-        align-items: flex-end;
-        padding-right: 15%;
+    @include tablet {
+      padding: 0;
+      max-width: 100%;
+      text-align: center;
+    }
+  }
 
-        @include laptop{
-            padding-right: 3%;
-        }
+  .default-slide__about {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 17%;
 
-        @include tablet{
-            padding: 0;
-            max-width: 100%;
-            text-align: center;
-        }
+    @include laptop {
+      padding-left: 7%;
     }
 
-    .default-slide__about{
-        width: 100%;
-        max-width: 100%;
-        padding-left: 17%;
+    @include tablet {
+      padding: 0;
+      text-align: center;
+    }
+  }
 
-        @include laptop{
-            padding-left: 7%;
-        }
+  .default-slide__picture {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img,
+    picture {
+      width: auto;
+      height: 80vh;
 
-        @include tablet{
-            padding: 0;
-            text-align: center;
-        }
+      @include laptop {
+        height: 70vh;
+      }
+
+      @include mobile {
+        height: 45dvh;
+      }
     }
 
-    .default-slide__picture{
-        position: absolute;
-        inset: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img,picture{
-            width: auto;
-            height: 80vh;
-
-            @include laptop{
-                height: 70vh;
-            }
-
-            @include mobile{
-                height: 45vh;
-            }
-        }
-
-        @include tablet{
-            position: static;
-        }
+    @include tablet {
+      position: static;
     }
+  }
 }

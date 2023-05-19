@@ -59,6 +59,12 @@
                 width: calc(100% + 90px);
                 height: 55vh;
             }
+
+            @include ios{
+                margin: 0;
+                width: auto;
+                height: 50dvh;
+            }
         }
     }
 }

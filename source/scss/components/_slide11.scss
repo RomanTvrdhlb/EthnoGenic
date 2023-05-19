@@ -1,7 +1,6 @@
 .slide11 {
   .default-slide__box {
     
-    
     @include laptop {
       grid-template-columns: 1fr 0.9fr;
     }
@@ -10,16 +9,19 @@
         padding-top: 15px;
     }
 
+    @include mobile {
+      justify-content: center;
+      padding: 0;
+    }
+
     @include ios{
       grid-gap: 30px;
     }
   }
 
   .default-slide__inner {
-  
     padding: 30px 0 40px 0;
    
-
     @include laptop {
       justify-content: center;
     }
@@ -41,7 +43,6 @@
       align-items: flex-end;
       justify-content: flex-end;
       
-
       @include laptop {
         justify-content: center;
         p {
@@ -103,6 +104,12 @@
             margin-right: -60px;
             width: calc(95% + 90px);
           }
+
+          @include ios{
+            margin: 0;
+            width: auto;
+            height: 40dvh;
+          }
         }
       }
 
@@ -147,6 +154,10 @@
       @include mobile {
         height: auto;
         width: 100%;
+      }
+
+      @include ios{
+        width: 90%;
       }
     }
 

@@ -36,6 +36,10 @@ p{
     letter-spacing: normal;
     line-height: normal;
   }
+
+  @include for-laptop{
+    letter-spacing: normal;
+  }
 }
 
 .contact-button{

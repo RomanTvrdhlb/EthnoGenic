@@ -13,8 +13,9 @@
       justify-content: flex-start;
     }
 
-    @include ios{
-      padding-top: 20px;
+    @include mobile {
+      justify-content: center;
+      padding: 0;
     }
   }
 
@@ -41,12 +42,8 @@
 
     img,
     picture {
-      height: 80vh;
+      height: 65vh;
       width: auto;
-
-      @include laptop{
-        height: 65vh;
-      }
 
       @include tablet {
         height: 55vh;
@@ -58,11 +55,11 @@
         width: calc(100% + 90px);
       }
 
-      // @include ios{
-      //   margin: 0;
-      //   width: 100%;
-      //   height: 45vh;
-      // }
+      @include ios{
+        margin: 0;
+        width: auto;
+        height: 55dvh;
+      }
     }
   }
 }

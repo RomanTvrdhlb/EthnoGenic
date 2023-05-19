@@ -2,7 +2,6 @@
   height: 100vh;
   width: 100%;
   
-
   @include mobile{
     height: 100dvh;
 
@@ -29,6 +28,10 @@
       flex-direction: column;
       justify-content: flex-start;
     }
+
+    @include mobile{
+      height: 100dvh;
+    }
   }
 
   &__inner{
@@ -37,6 +40,10 @@
     display: flex;
     flex-direction: column;
     grid-gap: clamp(50px, 8.462vw, 110px) 30px;
+
+    @include mobile{
+      height: 100dvh;
+    }
   }
 
   &__picture {
