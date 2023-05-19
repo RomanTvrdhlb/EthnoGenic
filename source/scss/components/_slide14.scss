@@ -22,6 +22,10 @@
     @include ios{
       grid-gap: 20px;
     }
+
+    @media (max-width: (325px)) {
+      grid-gap: 10px;
+    }
   }
   .default-slide__inner {
     display: grid;
@@ -160,6 +164,10 @@
 
       @include mobile {
         height: 50dvh;
+      }
+
+      @media (max-width: (325px)) {
+        height: 40dvh;
       }
     }
   }

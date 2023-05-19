@@ -13,6 +13,10 @@
     @include ios {
       grid-gap: 15px;
     }
+
+    @media (max-width: (325px)) {
+      grid-gap: 5px;
+    }
   }
 
   .default-slide__inner {
@@ -30,6 +34,10 @@
 
     @include ios {
       grid-gap: 15px;
+    }
+
+    @media (max-width: (325px)) {
+      grid-gap: 5px;
     }
 
     p {
@@ -94,7 +102,7 @@
       }
 
       .default-slide__about {
-        max-width: 50%;
+        max-width: 50%;     
       }
     }
   }
@@ -130,6 +138,10 @@
       @include ios{
         height: 20dvh;
       }
+
+      @media (max-width: (325px)) {
+        height: 15dvh;
+      }
     }
   }
 
@@ -153,6 +165,8 @@
   }
 
   .default-slide__about {
+    grid-gap: 30px;
+
     @include for-tablet {
       display: none;
     }
@@ -164,5 +178,9 @@
         display: inline;
       }
     }
+  
+    @media (max-width: (325px)) {
+      grid-gap: 5px;
+    }   
   }
 }

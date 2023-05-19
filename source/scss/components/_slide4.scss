@@ -89,6 +89,10 @@
       @include ios {
         height: 40dvh;
       }
+
+      @media (max-width: (325px)) {
+        height: 30dvh;
+      }
     }
  
     @include laptop {

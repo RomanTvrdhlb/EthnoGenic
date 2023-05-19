@@ -17,6 +17,10 @@
     @include ios {
       grid-gap: 40px;
     }
+
+    @media (max-width: (325px)) {
+      grid-gap: 30px;
+    }
   }
   .default-slide__inner {
     display: grid;
@@ -89,6 +93,10 @@
     @include mobile {
       height: fit-content;
     }
+
+    @media (max-width: (325px)) {
+      grid-gap: 10px;
+    }
   }
 
   p {
@@ -140,6 +148,10 @@
 
       @include ios{
         height: 24dvh !important;
+      }
+
+      @media (max-width: (325px)) {
+        height: 21dvh !important;
       }
     }
 

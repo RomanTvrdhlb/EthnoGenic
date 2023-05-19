@@ -12,6 +12,10 @@
     @include ios{
       grid-gap: 40px;
     }
+
+    @media (max-width: (325px)) {
+      grid-gap: 30px;
+    }
   }
 
   .default-slide__picture {
@@ -54,6 +58,10 @@
     @include ios {
       grid-gap: 30px;
       padding: 0;
+    }
+
+    @media (max-width: (325px)) {
+      grid-gap: 10px;
     }
   }
 }

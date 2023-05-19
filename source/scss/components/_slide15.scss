@@ -81,6 +81,10 @@
       grid-gap: 30px;
       width: 100%;
     }
+
+    @media (max-width: (325px)) {
+      grid-gap: 20px;
+    }
   }
 
   p {

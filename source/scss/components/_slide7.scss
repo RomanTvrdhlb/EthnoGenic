@@ -47,6 +47,10 @@
       @include ios{
         width: 90%;
       }
+
+      @media (max-width: (325px)) {
+        width: 85%;
+      }
     }
 
     @include laptop {
@@ -84,6 +88,10 @@
 
     @include ios{
       grid-gap: 20px;
+    }
+
+    @media (max-width: (325px)) {
+      grid-gap: 10px;
     }
   }
 }

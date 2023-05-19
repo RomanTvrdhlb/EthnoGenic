@@ -32,6 +32,10 @@
           @include ios {
             height: 47dvh;
           }
+
+          @media (max-width: (325px)) {
+            height: 40dvh;
+          }
         }
 
         @include tablet{

@@ -35,6 +35,10 @@
     @include mobile {
       grid-gap: 30px;
     }
+
+    @media (max-width: (325px)) {
+      grid-gap: 10px;
+    }
   }
 
   p {
@@ -107,6 +111,10 @@
         width: auto;
         height: 45dvh;
         margin: 0;
+      }
+
+      @media (max-width: (325px)) {
+        height: 40dvh;
       }
     }
   }

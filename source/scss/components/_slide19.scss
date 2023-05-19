@@ -18,6 +18,10 @@
     @include ios {
       grid-gap: 20px;
     }
+
+    @media (max-width: (325px)) {
+      grid-gap: 10px;
+    }
   }
 
   .default-slide__info {
@@ -33,8 +37,13 @@
   }
 
   .default-slide__about {
+    grid-gap: 30px;
     @include for-tablet {
       display: none;
+    }
+
+    @media (max-width: (325px)) {
+      grid-gap: 10px;
     }
   }
 
@@ -71,6 +80,10 @@
 
       @include ios{
         height: 35dvh;
+      }
+
+      @media (max-width: (325px)) {
+        height: 25dvh;
       }
     }
 

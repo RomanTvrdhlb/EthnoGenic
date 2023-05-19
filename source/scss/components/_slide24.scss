@@ -26,10 +26,6 @@
       padding: 0;
       grid-gap: 20px;
     }
-
-    @include ios{
-      grid-gap: 20px;
-    }
   }
 
   .contact-form {
@@ -37,8 +33,47 @@
 
     @include small-tablet {
       order: 1;
+      max-width: 100%;
     }
+
+
+  @include ios{
+      grid-gap: 10px;
   }
+
+    @media (max-width: (325px)) {
+      grid-gap: 7px;
+    }
+
+    &__input{
+      @include ios {
+        padding: 15px 16px;
+      }
+
+      @media (max-width: (325px)) {
+        padding: 10px 13px;
+      }
+    }
+
+    &__area{
+      @include ios {
+        min-height: 80px;
+      }
+
+      @media (max-width: (325px)) {
+        min-height: 50px;
+        padding: 10px;
+      }
+  }
+
+  &__title{
+    
+    @media (max-width: (325px)) {
+      font-size: 35px;
+    }
+
+  }
+}
 
   p {
     @include for-small-tablet {
