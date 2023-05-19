@@ -10,7 +10,8 @@
     }
 
     @include small-tablet {
-      padding: 20px 0;
+      padding: 0;
+      justify-content: center;
     }
 
     @include ios {
@@ -72,9 +73,9 @@
         }
       }
 
-      @include mobile {
-        height: 100% !important;
-      }
+      // @include mobile {
+      //   height: 100% !important;
+      // }
     }
 
     @include small-tablet {

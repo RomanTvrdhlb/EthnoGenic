@@ -3344,7 +3344,10 @@ p {
 }
 @media (max-width: 767px) {
   .slide12 .default-slide__box {
-    padding: 20px 0;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media (max-width: 414px) {
@@ -3425,11 +3428,6 @@ p {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-  }
-}
-@media (max-width: 576px) {
-  .slide12 .default-slide__inner--mode {
-    height: 100% !important;
   }
 }
 @media (max-width: 767px) {
