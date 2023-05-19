@@ -65,5 +65,9 @@
     @include tablet {
       margin-top: initial;
     }
+
+    @include ios{
+      grid-gap: 20px;
+    }
   }
 }

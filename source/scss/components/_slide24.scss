@@ -26,6 +26,10 @@
       padding: 0;
       grid-gap: 20px;
     }
+
+    @include ios{
+      grid-gap: 20px;
+    }
   }
 
   .contact-form {

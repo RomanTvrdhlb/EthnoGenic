@@ -68,6 +68,10 @@
       @include mobile {
         height: 43dvh;
       }
+
+      @include ios{
+        height: 35dvh;
+      }
     }
 
     @include tablet {

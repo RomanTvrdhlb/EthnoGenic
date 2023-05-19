@@ -32,6 +32,10 @@
       grid-gap: 40px;
     }
 
+    @include ios{
+      grid-gap: 20px;
+    }
+
     &--mode {
       grid-template-columns: 2.3fr 1fr;
 

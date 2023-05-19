@@ -62,4 +62,8 @@ p{
   &:hover{
     background-color: rgba(var(--bg-f),1.0);
   }
+
+  @include ios{
+    height: 43px;
+  }
 }

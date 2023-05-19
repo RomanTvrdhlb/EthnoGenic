@@ -15,7 +15,7 @@
     }
 
     @include ios{
-      grid-gap: 30px;
+      grid-gap: 10px;
     }
   }
 
@@ -108,7 +108,7 @@
           @include ios{
             margin: 0;
             width: auto;
-            height: 40dvh;
+            height: 32dvh;
           }
         }
       }

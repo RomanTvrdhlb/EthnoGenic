@@ -9,6 +9,8 @@
 
     @include mobile {
       padding-top: 0;
+      justify-content: center;
+      grid-gap: 25px;
     }
   }
 
@@ -114,7 +116,7 @@
       }
 
       @include ios{
-        height: 60dvh;
+        height: 50dvh;
         width: auto;
       }
     }

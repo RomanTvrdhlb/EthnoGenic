@@ -23,6 +23,10 @@
     top: 3dvh;
   }
 
+  @media (max-width: (376px)) {
+   top: 2dvh;
+  }
+
   &.active {
     img {
       display: none;

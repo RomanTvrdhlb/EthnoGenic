@@ -38,10 +38,21 @@
             padding-top: 9dvh;
             padding-bottom: 20.5dvh;
           }
+
+          @media (max-width: (376px)) {
+            padding-top: 2.5dvh;
+            padding-bottom: 18dvh;
+          }
     }
     .main-title{
         @include mobile{
             text-align: right;
         }
+    }
+
+    .main-top{
+      @media (max-width: (375px)) {
+        grid-gap: 10px;
+      }
     }
 }

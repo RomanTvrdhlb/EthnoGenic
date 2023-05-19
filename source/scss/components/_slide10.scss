@@ -16,6 +16,10 @@
         @include mobile{
             padding-top: 0;
         }
+
+        @include ios{
+            grid-gap: 20px;
+        }
     }
 
     p{
@@ -29,6 +33,10 @@
         @include tablet{
             max-width: 100%;
             grid-gap: 30px;
+        }
+
+        @include ios{
+            grid-gap: 20px;
         }
 
     }

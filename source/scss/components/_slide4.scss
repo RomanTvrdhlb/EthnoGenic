@@ -18,6 +18,10 @@
       justify-content: center;
       padding: 0;
     }
+
+    @include ios{
+      grid-gap: 30px;
+    }
   }
 
   p {
@@ -83,7 +87,7 @@
       }
 
       @include ios {
-        height: 45dvh;
+        height: 40dvh;
       }
     }
  

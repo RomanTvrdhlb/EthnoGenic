@@ -11,7 +11,7 @@
     }
 
     @include ios {
-      grid-gap: 20px;
+      grid-gap: 15px;
     }
   }
 
@@ -26,6 +26,10 @@
       flex-direction: column;
       grid-gap: clamp(20px, 3.077vw, 40px);
       align-items: flex-start;
+    }
+
+    @include ios {
+      grid-gap: 15px;
     }
 
     p {
@@ -121,6 +125,10 @@
 
       @include mobile {
         height: 22dvh;
+      }
+
+      @include ios{
+        height: 20dvh;
       }
     }
   }
