@@ -10,6 +10,10 @@
         --phrase-gap: 9px;
     }
 
+    @include mobile{
+      --phrase-gap: 14px;
+    }
+
   &__inner {
     display: flex;
     align-items: center;

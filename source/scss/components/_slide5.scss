@@ -1,6 +1,8 @@
 .slide5{
 
     .default-slide__box{
+      grid-gap: clamp(60px, 6.154vw, 80px);
+      
       @include mobile {
         justify-content: center;
         padding: 0;
@@ -44,6 +46,8 @@
     }
 
     p{
+      max-width: 610px;
+      
       @include laptop{
         max-width: 305px;
         justify-self: center;

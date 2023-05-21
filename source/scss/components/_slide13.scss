@@ -12,6 +12,7 @@
 
   .default-slide__box {
     grid-template-columns: 1.4fr 1fr;
+    grid-gap: 55px;
 
     @include laptop {
       display: flex;
@@ -22,7 +23,7 @@
   }
 
   p {
-    max-width: 440px;
+    max-width: 525px;
 
     @include laptop{
         max-width: 710px;

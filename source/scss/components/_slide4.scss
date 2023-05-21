@@ -20,7 +20,7 @@
     }
 
     @include ios{
-      grid-gap: 30px;
+      grid-gap: 15px;
     }
   }
 
@@ -87,11 +87,11 @@
       }
 
       @include ios {
-        height: 40dvh;
+        height: 48dvh;
       }
 
       @media (max-width: (325px)) {
-        height: 30dvh;
+        height: 34dvh;
       }
     }
  
