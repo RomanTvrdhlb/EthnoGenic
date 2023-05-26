@@ -5458,7 +5458,7 @@ p {
 @media (max-width: 576px) {
   .slide25 .default-slide__picture img,
   .slide25 .default-slide__picture picture {
-    height: 45dvh;
+    height: 48dvh;
   }
 }
 @media (max-width: 1024px) {
@@ -5720,7 +5720,7 @@ footer {
 @media (max-width: 576px) {
   .first-slide__inner {
     padding-top: 9dvh;
-    padding-bottom: 20.5dvh;
+    padding-bottom: 9.5dvh;
   }
 }
 @media (max-width: 376px) {
