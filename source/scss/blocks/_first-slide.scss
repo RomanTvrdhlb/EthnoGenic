@@ -43,10 +43,10 @@
             padding-bottom: 9.5dvh;
           }
 
-          @media (max-width: (376px)) {
-            padding-top: 2.5dvh;
-            padding-bottom: 4dvh;
-          }
+          // @media (max-width: (376px)) {
+          //   padding-top: 2.5dvh;
+          //   padding-bottom: 4dvh;
+          // }
     }
     .main-title{
         @include mobile{

@@ -5723,12 +5723,6 @@ footer {
     padding-bottom: 9.5dvh;
   }
 }
-@media (max-width: 376px) {
-  .first-slide__inner {
-    padding-top: 2.5dvh;
-    padding-bottom: 4dvh;
-  }
-}
 @media (max-width: 576px) {
   .first-slide .main-title {
     text-align: right;
