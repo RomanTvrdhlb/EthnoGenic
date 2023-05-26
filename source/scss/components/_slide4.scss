@@ -86,10 +86,6 @@
         height: 50vh;
       }
 
-      @include ios {
-        height: 48dvh;
-      }
-
       @media (max-width: (325px)) {
         height: 34dvh;
       }

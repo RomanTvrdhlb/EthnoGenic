@@ -11,6 +11,10 @@
       height: 100vh;
       display: flex;
       align-items: center;
+
+      @include mobile{
+        height: 100dvh;
+      }
     }
 
     &__inner{
@@ -41,7 +45,7 @@
 
           @media (max-width: (376px)) {
             padding-top: 2.5dvh;
-            padding-bottom: 18dvh;
+            padding-bottom: 4dvh;
           }
     }
     .main-title{
@@ -51,6 +55,13 @@
     }
 
     .main-top{
+
+      // @include mobile{
+      //   position: absolute;
+      //   left: 0;
+      //   bottom: 9dvh;
+      // }
+
       @media (max-width: (375px)) {
         grid-gap: 10px;
       }
