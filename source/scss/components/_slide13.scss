@@ -23,7 +23,13 @@
   }
 
   p {
-    max-width: 525px;
+    max-width: 480px;
+
+    @include for-laptop{
+      br{
+        display: none;
+      }
+    }
 
     @include laptop{
         max-width: 710px;

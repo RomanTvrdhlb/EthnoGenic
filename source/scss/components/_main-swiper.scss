@@ -89,9 +89,9 @@
   transform: translate(-50%, -50%);
   z-index: 30;
 
-  @include for-small-tablet {
-    display: none;
-  }
+  // @include for-small-tablet {
+  //   display: none;
+  // }
 }
 
 @keyframes nextBtn {

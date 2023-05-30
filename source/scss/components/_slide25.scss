@@ -75,9 +75,17 @@
         height: 70vh;
       }
 
-      @include mobile {
-        height: 48dvh;
+      @include small-tablet{
+        height: 55vh;
       }
+
+      @include mobile {
+        height: 44dvh;
+      }
+
+      @media (max-width: (375px)) {
+        height: 55dvh;
+      }  
     }
 
     @include tablet {
