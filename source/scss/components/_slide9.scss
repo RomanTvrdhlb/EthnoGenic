@@ -2,7 +2,6 @@
   .default-slide__box {
     grid-template-columns: 100%;
     justify-items: center;
-    // align-items: end;
     padding-top: 40px;
 
     @include mobile {
@@ -44,7 +43,6 @@
   p {
     max-width: 610px;
     position: absolute;
-    // top: 8%;
     bottom: 82%;
     left: 50%;
     transform: translateX(-22%);
@@ -91,8 +89,6 @@
     picture,
     img {
      
-      // height: 75vh;
-
       @include laptop {
         width: auto;
         height: 70vh;
