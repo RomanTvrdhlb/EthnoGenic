@@ -37,6 +37,10 @@
         display: none;
       }
     }
+
+    @include ios{
+    max-width: 95%;
+    }
   }
 
   .default-slide__picture {

@@ -6,12 +6,9 @@
   z-index: 2;
 
   --phrase-gap: 18px;
-    @include small-tablet{
-        --phrase-gap: 9px;
-    }
 
-    @include mobile{
-      --phrase-gap: 14px;
+    @include small-tablet{
+        --phrase-gap: 17px;
     }
 
   &__inner {
@@ -32,6 +29,7 @@
 
     @include small-tablet {
       font-size: 28px;
+      letter-spacing: normal;
     }
   }
 
@@ -48,6 +46,7 @@
 
     @include small-tablet {
       font-size: 12px;
+      letter-spacing: normal;
     }
 
     &:not(:first-child) {
