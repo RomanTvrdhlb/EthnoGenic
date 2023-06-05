@@ -2121,6 +2121,11 @@ p {
             transform: translateX(-109%);
   }
 }
+@media (min-width: 1024px) {
+  .slide2 p b {
+    display: none;
+  }
+}
 @media (max-width: 1024px) {
   .slide2 p {
     -webkit-box-align: center;
@@ -2573,6 +2578,11 @@ p {
     grid-gap: 40px;
   }
   .slide5 p br {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .slide5 p b {
     display: none;
   }
 }
