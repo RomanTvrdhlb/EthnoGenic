@@ -29,6 +29,12 @@
       transform: translateX(-109%);
     }
 
+    @include for-tablet{
+      b{
+        display: none;
+      }
+    }
+
     @include tablet {
       align-items: center;
       transform: none;

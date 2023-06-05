@@ -61,5 +61,11 @@
           display: none;
         }
       }
+
+      @include for-tablet{
+        b{
+          display: none;
+        }
+      }
     }
 }
