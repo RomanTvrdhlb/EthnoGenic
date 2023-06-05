@@ -61,11 +61,15 @@
           display: none;
         }
       }
-
-      @include for-tablet{
-        b{
+      b{
+      &.space{
+        display: inline-block;
+        width: 3px;
+         
+        @include for-tablet{
           display: none;
         }
       }
+    }
     }
 }

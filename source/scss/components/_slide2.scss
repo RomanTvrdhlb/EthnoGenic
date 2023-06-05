@@ -22,30 +22,25 @@
   p {
     align-items: end;
     font-weight: 500;
+    max-width: 445px;
+
     @include laptop {
+      max-width: 360px;
       position: absolute;
       top: 10%;
       left: 50%;
       transform: translateX(-109%);
     }
 
-    @include for-tablet{
-      b{
-        display: none;
-      }
-    }
-
     @include tablet {
       align-items: center;
       transform: none;
       position: initial;
-      br {
-        display: none;
-      }
+      max-width: 100%;
     }
 
-    @include ios{
-    max-width: 95%;
+    @include ios {
+      max-width: 95%;
     }
   }
 
