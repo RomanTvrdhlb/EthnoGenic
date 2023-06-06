@@ -2,14 +2,12 @@
   .default-slide__box {
     display: flex;
     flex-direction: column;
-    padding-top: 40px;
-    grid-gap: 60px;
-
-    @include laptop {
-      justify-content: center;
-    }
+    padding-top: 10vh;
+    grid-gap: 120px;
 
     @include tablet {
+      padding-top: 0;
+      justify-content: center;
       grid-gap: 20px;
     }
 
@@ -31,38 +29,8 @@
     height: fit-content;
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 80px;
-
-    &--mode{
-      grid-template-columns: 1fr;   
-      padding: 0 !important;
-      
-      @include laptop{
-        grid-template-columns: 1fr;
-        grid-gap: 0;
-      }
-
-      p{
-        justify-self: center;
-        
-      }
-
-      .default-slide__picture {
-        width: fit-content;
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-        img,picture{
-          height: 28vh;
-        }
-
-        @include tablet{
-          display: none;
-        }
-      }
-    }
+    grid-template-columns: 1fr 1.05fr;
+    grid-gap: 50px;
 
     @include laptop {
       padding: 0;
@@ -88,10 +56,50 @@
     @media (max-width: (325px)) {
       grid-gap: 10px;
     }
+
+    &--mode{
+      grid-template-columns: 1fr;   
+      padding: 0 !important;
+      
+      @include laptop{
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+      }
+
+      p{
+        justify-self: center;
+        margin-left: -10%;
+
+        @include laptop{
+          margin-left: -20%;
+          max-width: 57%;
+        }
+
+        @include tablet{
+          max-width: 100%;
+          margin-left: 0;
+        }
+      }
+
+      .default-slide__picture {
+        width: fit-content;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-63%);
+        img,picture{
+          height: 26vh;
+        }
+
+        @include tablet{
+          display: none;
+        }
+      }
+    }
   }
 
   p {
-    max-width: 560px;
+    max-width: 100%;
 
     @include tablet {
       max-width: 100%;
@@ -103,7 +111,7 @@
     img,
     picture {
       width: auto;
-      height: 50vh;
+      height: 47vh;
 
       @include tablet {
         height: 50vh;
@@ -128,7 +136,7 @@
     }
   }
   .default-slide__info {
-    max-width: 700px;
+    max-width: 730px;
     padding-top: 40px;
     justify-content: center;
 
