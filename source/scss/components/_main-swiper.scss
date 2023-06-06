@@ -38,9 +38,9 @@
       left: calc(var(--container-offset) * 2);
       right: 0;
       bottom: 15dvh;
-      height: 1.5px;
+      height: 2px;
       border-radius: 20px;
-      background-color:rgba(var(--bg-a),1.0);
+      background-color:rgba(var(--bg-a),0.8);
 
       @include for-small-tablet{
         display: none;
