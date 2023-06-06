@@ -31,6 +31,22 @@
     align-items: center;
     justify-content: center;
 
+    &:before{
+      position: absolute;
+      content: '';
+      width: 100%;
+      left: calc(var(--container-offset) * 2);
+      right: 0;
+      bottom: 15dvh;
+      height: 1.5px;
+      border-radius: 20px;
+      background-color:rgba(var(--bg-a),1.0);
+
+      @include for-small-tablet{
+        display: none;
+      }
+    }
+
     @include laptop{
       top: 0;
       left: 0;

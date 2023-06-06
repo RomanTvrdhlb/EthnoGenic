@@ -34,6 +34,36 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 80px;
 
+    &--mode{
+      grid-template-columns: 1fr;   
+      padding: 0 !important;
+      
+      @include laptop{
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+      }
+
+      p{
+        justify-self: center;
+        
+      }
+
+      .default-slide__picture {
+        width: fit-content;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        img,picture{
+          height: 28vh;
+        }
+
+        @include tablet{
+          display: none;
+        }
+      }
+    }
+
     @include laptop {
       padding: 0;
       grid-gap: 40px;
