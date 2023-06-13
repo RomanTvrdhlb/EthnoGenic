@@ -1,7 +1,6 @@
 .slide19 {
   .default-slide__box {
     grid-template-columns: 1fr 2fr;
-    grid-gap: 40px;
     justify-items: center;
 
     @include laptop {
@@ -15,18 +14,10 @@
       padding: 0;
     }
 
-    @include ios {
-      grid-gap: 20px;
-    }
-
-    @media (max-width: (325px)) {
-      grid-gap: 10px;
-    }
   }
 
   .default-slide__info {
-    max-width: 426px;
-
+    max-width: 406px;
     @include laptop {
       max-width: 80%;
     }
@@ -37,23 +28,41 @@
   }
 
   .default-slide__about {
-    grid-gap: 30px;
+
     @include for-tablet {
       display: none;
     }
+    span{
+      padding-bottom: 30px;
 
-    @media (max-width: (325px)) {
-      grid-gap: 10px;
+      @media (max-width: (325px)) {
+        padding-bottom: 10px;
     }
+    }
+    
   }
 
   .default-slide__picture {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 40px;
 
     @include laptop {
       justify-content: center;
+      padding: 0 0 40px;
+    }
+
+    @include tablet {
+      justify-content: center;
+    }
+
+      @include ios {
+        padding: 0 0 20px;
+    }
+
+    @media (max-width: (325px)) {
+      padding: 0 0 10px;
     }
 
     img,
@@ -85,10 +94,6 @@
       @media (max-width: (325px)) {
         height: 25dvh;
       }
-    }
-
-    @include tablet {
-      justify-content: center;
     }
   }
 }

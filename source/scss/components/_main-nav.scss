@@ -3,7 +3,12 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    grid-gap: clamp(20px, 5.352vw, 60px);
+  }
+
+  &__item{
+    &:not(:last-child) {
+      margin-bottom: clamp(20px, 5.352vw, 60px);
+    }
   }
 
   &__link {
@@ -16,6 +21,7 @@
     text-align: left;
     position: relative;
     transition: all .4s;
+
     &.active{
         &:before{
             position: absolute;

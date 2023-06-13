@@ -10,9 +10,14 @@
   position: absolute;
   top: 7%;
   left: 0;
+
+  @media (max-width: (1350px)) {
+    left: 20px;
+  }
   
   @include laptop{
     top: 8%;
+    left: 0;
   }
 
   @include small-tablet{
@@ -58,7 +63,7 @@ transition: all .5s ease;
   display: flex;
   overflow-y: auto;
   flex-direction: column;
-  grid-gap: 70px;
+
   height: 100vh;
   padding: clamp(40px, 7.31vw, 125px) 30px 30px clamp(40px, 7.31vw, 125px);
   background: rgba(var(--bg-b),0.7);
@@ -75,10 +80,16 @@ transition: all .5s ease;
   }
 
   .main-nav {
+    padding-top: 70px;
     &__list {
       flex-direction: column;
       align-items: flex-start;
-      grid-gap: 30px;
+    }
+
+    &__item{
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
       &__link {
         padding: 10px 0;

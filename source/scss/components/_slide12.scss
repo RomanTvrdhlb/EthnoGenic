@@ -2,31 +2,41 @@
   .default-slide__box {
     display: flex;
     flex-direction: column;
-    grid-gap: 20px;
     padding: 40px 0;
-
-    @include tablet {
-      grid-gap: 50px;
-    }
 
     @include small-tablet {
       padding: 0;
       justify-content: center;
     }
-
-    @include ios {
-      grid-gap: 40px;
-    }
-
-    @media (max-width: (325px)) {
-      grid-gap: 30px;
-    }
   }
   .default-slide__inner {
     display: grid;
     grid-template-columns: 1.4fr 1fr;
-    grid-gap: 80px;
     align-items: end;
+    margin-bottom: 20px;
+
+    @include tablet {
+      margin-bottom: 50px;
+    }
+
+    @include small-tablet {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    @include mobile {
+      height: fit-content;
+    }
+
+    @include ios {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: (325px)) {
+      margin-bottom: 30px;
+    }
 
     &--mode {
       margin-top: -7%;
@@ -35,11 +45,26 @@
       align-items: start;
       width: 100%;
 
+      @include tablet {
+        margin-bottom: 0;
+      }
+
+      @include ios {
+        margin-bottom: 0;
+      }
+  
+      @media (max-width: (325px)) {
+        margin-bottom: 0;
+      }
+
       .default-slide__picture {
+        padding-left: 40px;
+        padding-right: initial;
         @include small-tablet {
           display: flex;
           height: 100%;
           align-items: flex-end;
+          padding: 0;
         }
 
         @include mobile {
@@ -61,8 +86,8 @@
       }
 
       p {
-        max-width: 550px;
-
+        max-width: 580px;
+        padding: 0 40px 0 0;
         @include laptop {
           padding-top: 13vh;
           justify-content: initial;
@@ -74,34 +99,21 @@
 
         @include small-tablet {
           height: fit-content;
+          padding: 0 0 20px;
+        }
+
+        @media (max-width: (325px)) {
+          padding: 0 0 10px;
         }
       }
-
-      // @include mobile {
-      //   height: 100% !important;
-      // }
-    }
-
-    @include small-tablet {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      grid-gap: 20px;
-    }
-
-    @include mobile {
-      height: fit-content;
-    }
-
-    @media (max-width: (325px)) {
-      grid-gap: 10px;
     }
   }
 
   p {
     height: 100%;
     justify-content: center;
+    max-width: 520px;
+    padding-left: 40px;
 
     @include laptop {
       justify-content: flex-end;
@@ -113,8 +125,9 @@
     }
 
     @include small-tablet {
-      padding: 0;
+      padding: 20px 0 0;
       align-items: center;
+      max-width: 100%;
     }
 
     @include mobile {
@@ -129,6 +142,11 @@
   }
 
   .default-slide__picture {
+    padding-right: 40px;
+
+    @include small-tablet {
+      padding: 0;
+    }
     img,
     picture {
       height: 60vh;
@@ -146,7 +164,7 @@
         height: 32dvh !important;
       }
 
-      @include ios{
+      @include ios {
         height: 24dvh !important;
       }
 

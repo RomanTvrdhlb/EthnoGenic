@@ -27,12 +27,10 @@ p{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  grid-gap: 85px;
   letter-spacing: -2.1px;
   
   @include small-tablet{
     font-size: 14px;
-    grid-gap: clamp(20px, 2.632vw, 45px);
     letter-spacing: normal;
     line-height: normal;
   }

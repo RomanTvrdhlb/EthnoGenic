@@ -1,7 +1,6 @@
 .main-top {
   display: flex;
   flex-direction: column;
-  grid-gap: 18px;
   max-width: 500px;
   z-index: 2;
 
@@ -14,7 +13,6 @@
   &__inner {
     display: flex;
     align-items: center;
-    grid-gap: var(--phrase-gap);
   }
 
   &__title {
@@ -26,14 +24,20 @@
     letter-spacing: -4.16px;
     line-height: 33px;
     grid-column: span 4;
+    margin-bottom: 18px;
 
     @include small-tablet {
       font-size: 28px;
       letter-spacing: normal;
     }
+
+    @media (max-width: (375px)) {
+      margin-bottom: 10px;
+    }
   }
 
   &__phrase {
+    margin-right: var(--phrase-gap);
     color: rgba(var(--cl-a), 1);
     font-family: var(--font-family);
     font-size: 17px;

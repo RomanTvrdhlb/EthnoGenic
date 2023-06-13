@@ -23,6 +23,7 @@
     align-items: end;
     font-weight: 500;
     max-width: 445px;
+   
 
     @include laptop {
       max-width: 360px;
@@ -30,6 +31,7 @@
       top: 10%;
       left: 50%;
       transform: translateX(-109%);
+      margin-bottom: clamp(60px, 6.538vw, 85px);
     }
 
     @include tablet {
@@ -45,6 +47,7 @@
   }
 
   .default-slide__picture {
+    margin-left: clamp(60px, 6.538vw, 85px);
     img,
     picture {
       width: auto;
@@ -60,6 +63,7 @@
     }
 
     @include laptop {
+      margin: 0;
       display: flex;
       justify-content: center;
     }

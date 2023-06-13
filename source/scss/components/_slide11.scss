@@ -13,18 +13,10 @@
       justify-content: center;
       padding: 0;
     }
-
-    @include ios{
-      grid-gap: 10px;
-    }
-
-    @media (max-width: (325px)) {
-      gap: 0;
-    }
   }
 
   .default-slide__inner {
-    padding: 30px 0 40px 0;
+    padding: 30px 0 40px calc(clamp(60px, 6.538vw, 85px) / 2);
    
     @include laptop {
       justify-content: center;
@@ -46,6 +38,7 @@
     &--mode {
       align-items: flex-end;
       justify-content: flex-end;
+      padding: 30px calc(clamp(60px, 6.538vw, 85px) / 2) 40px 0;
       
       @include laptop {
         justify-content: center;
@@ -57,7 +50,7 @@
           span {
             position: absolute;
             top: 0;
-            transform: translateY(-25%);
+            transform: translateY(-70%);
             left: 0;
             min-width: 660px;
 
@@ -75,7 +68,7 @@
 
       @include tablet {
         flex-direction: column-reverse;
-
+        padding: 0 0 clamp(60px, 6.538vw, 85px);
         p {
           height: initial;
           max-width: 100%;
@@ -87,11 +80,23 @@
 
       @include mobile{
         display: flex;
-        grid-gap: 20px;
+      }
+
+      @include ios{
+        padding-bottom: 10px;
+      }
+  
+      @media (max-width: (325px)) {
+        padding-bottom: 0;
       }
 
       .default-slide__picture {
         justify-content: flex-end;
+        margin: 0;
+
+        @include tablet{
+          padding: 0;
+        }
 
         @include small-tablet{
           justify-content: center;
@@ -122,11 +127,16 @@
       }
 
       p{
-        padding: 0;
+        padding: 0 0 clamp(50px, 8.462vw, 110px);
         margin-right: -10%;
 
         @include tablet{
         margin: 0;
+        padding: clamp(50px, 8.462vw, 110px) 0 0;
+        }
+
+        @include mobile{
+          padding-top: 20px;
         }
       }
     }
@@ -136,6 +146,7 @@
     max-width: 500px;
     padding-top: 45px;
 
+
     @media (max-width: (325px)) {
       padding: 0;
     }
@@ -144,6 +155,7 @@
   .default-slide__picture {
     display: flex;
     justify-content: flex-end;
+    margin-bottom: clamp(50px, 8.462vw, 110px);
 
     img,
     picture {
@@ -178,6 +190,8 @@
     }
 
     @include tablet{
+      margin: 0;
+      padding-right: 30px;
       justify-content: center;
     }
   }

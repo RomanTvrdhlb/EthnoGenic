@@ -9,9 +9,7 @@
       padding: 0;
     }
 
-    @include ios{
-      grid-gap: 40px;
-    }
+  
   }
 
   .default-slide__inner {
@@ -28,15 +26,11 @@
       order: 2;
       padding: 0;
       width: 100%;
-      grid-gap: 40px;
+      padding-top: clamp(60px, 6.538vw, 85px);
     }
 
-    @include mobile {
-      grid-gap: 30px;
-    }
-
-    @media (max-width: (325px)) {
-      grid-gap: 10px;
+    @include ios {
+     padding-top: 40px;
     }
   }
 
@@ -75,20 +69,31 @@
       left: 50%;
       bottom: 4%;
     }
+
+    @include tablet {
+      padding-top: 40px;
+    }
+
+    @include mobile {
+      padding-top: 30px;
+    }
+
+    @media (max-width: (325px)) {
+      padding-top: 10px;
+    }
   }
 
   .default-slide__picture {
     display: flex;
     justify-content: center;
 
-    @include laptop{
+    @include laptop {
       align-self: center;
       margin-bottom: -5%;
     }
 
     picture,
     img {
-     
       @include laptop {
         width: auto;
         height: 70vh;
@@ -105,7 +110,7 @@
         height: 60vh;
       }
 
-      @include ios{
+      @include ios {
         width: auto;
         height: 45dvh;
         margin: 0;

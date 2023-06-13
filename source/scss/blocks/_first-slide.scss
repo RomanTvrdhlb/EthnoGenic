@@ -15,6 +15,10 @@
     @include mobile {
       height: 100dvh;
     }
+
+    .swiper-button-next{
+      top: 94%;
+    }
   }
 
   &__inner {
@@ -23,12 +27,16 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    grid-gap: 100px;
     height: fit-content;
     max-height: 950px;
     height: 100%;
 
+    @media (max-width: (1350px)) {
+      padding-left: 20px;
+    }
+
     @include laptop {
+      padding-left: initial;
       max-height: 100%;
     }
 
@@ -44,14 +52,10 @@
     }
   }
   .main-title {
+    margin-bottom: 100px;
     @include mobile {
       text-align: right;
     }
   }
 
-  .main-top {
-    @media (max-width: (375px)) {
-      grid-gap: 10px;
-    }
-  }
 }

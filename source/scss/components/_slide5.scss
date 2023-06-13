@@ -1,75 +1,84 @@
-.slide5{
+.slide5 {
+  .default-slide__box {
+    @include mobile {
+      justify-content: center;
+      padding: 0;
+    }
+  }
 
-    .default-slide__box{
-      grid-gap: clamp(60px, 6.154vw, 80px);
-      
+  .default-slide__picture {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: calc(clamp(60px, 6.154vw, 80px) / 2);
+
+    img,
+    picture {
+      width: auto;
+      height: 63vh;
+
+      @include tablet {
+        height: 60vh;
+      }
+
       @include mobile {
-        justify-content: center;
-        padding: 0;
+        width: auto;
+        height: 53vh;
       }
 
-      @include ios{
-        grid-gap: 25px;
+      @include ios {
+        height: 47dvh;
+      }
+
+      @media (max-width: (325px)) {
+        height: 40dvh;
       }
     }
 
-    .default-slide__picture{
-        display: flex;
-        align-items: center;
-        justify-content: end;
+    @include tablet {
+      justify-content: center;
+      padding: 0;
+    }
+  }
 
-        img,picture{
-          width: auto;
-          height: 63vh;
-
-          @include tablet{
-            height: 60vh;
-          }
-
-          @include mobile{
-            width: auto;
-            height: 53vh;
-          }
-
-          @include ios {
-            height: 47dvh;
-          }
-
-          @media (max-width: (325px)) {
-            height: 40dvh;
-          }
-        }
-
-        @include tablet{
-          justify-content: center;
-        }
+  p {
+    max-width: 610px;
+    padding-left: calc(clamp(60px, 6.154vw, 80px) / 2);
+    @include laptop {
+      max-width: 330px;
+      justify-self: center;
     }
 
-    p{
-      max-width: 610px;
-      
-      @include laptop{
-        max-width: 305px;
-        justify-self: center;
-      }
+    @include tablet {
+      padding-left: 0;
+      padding-top: clamp(60px, 6.154vw, 80px);
+      max-width: 100%;
 
-      @include tablet{
-        max-width: 100%;
-        grid-gap: 40px;
-
-        br{
-          display: none;
-        }
+      br {
+        display: none;
       }
-      b{
-      &.space{
+    }
+    @include ios {
+      padding-top: 25px;
+    }
+    b {
+      &.space {
         display: inline-block;
         width: 4px;
-         
-        @include for-tablet{
+
+        @include for-tablet {
           display: none;
         }
       }
     }
+    span {
+      &:not(:last-child) {
+        padding-bottom: 85px;
+
+        @include tablet {
+          padding-bottom: 40px;
+        }
+      }
     }
+  }
 }
